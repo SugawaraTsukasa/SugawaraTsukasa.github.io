@@ -8,7 +8,8 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center fixed-top">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
+  <button aria-controls="navbar" aria-expanded="false" aria-label="ナビゲーションの切替" class="navbar-toggler" data-target="#navbar"
+          data-toggle="collapse" type="button">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse justify-content-around justify-content-md-center" id="navbar">
@@ -47,80 +48,50 @@
       </div>
       <div class="row"><!--メイン-->
         <div class="col-12 py-3 px-3">
-          <!--
-          <div class="row">
-            <div class="col">
-        <h2 class="">履修したプロジェクト演習</h2>
-        <dl>
-          <dt>1年次</dt>
-          <dd>
-            <ul>
-              <li>「キッズアニメーションCG制作」履修</li>
-              <li>「CGアニメーションディベロップメント」履修</li>
-            </ul>
-          </dd>
 
-          <dt>2年次</dt>
-          <dd>
-            <ul>
-              <li>「Procedural Animation Basic」履修</li>
-              <li>「キッズアニメーションCG制作」履修</li>
-            </ul>
-          </dd>
-
-          <dt>3年次</dt>
-          <dd>
-            <ul>
-              <li>「実践的Web開発」履修中</li>
-            </ul>
-          </dd>
-        </dl>
-      </div>
-    </div>
-    -->
           <div class="row mt-3">
             <div class="col">
               <h2 class="text-center">スキル</h2>
 
               <div class="row py-3">
                 <div class="col-md-3 col-sm-12 mb-3 text-center">
-                <div class="card border-dark border-0">
-                  <img src="img/eizo.png" class="card-img-top" alt="eizo">
-                  <div class="card-body">
-                    <h3 class="card-title">映像制作</h3>
-                    <p class="card-text">Adobe After Effectsやpremiereを使用した映像制作が出来ます。</p>
-                    <a class="btn btn-primary align-bottom" href="movie.html" target="_blank">作品はこちら</a>
+                  <div class="card border-dark border-0">
+                    <img alt="eizo" class="card-img-top" src="img/eizo.png">
+                    <div class="card-body">
+                      <h3 class="card-title">映像制作</h3>
+                      <p class="card-text">Adobe After Effectsやpremiereを使用した映像制作が出来ます。</p>
+                      <a class="btn btn-primary align-bottom" href="movie.html">作品はこちら</a>
+                    </div>
                   </div>
-                </div>
                 </div>
                 <div class="col-md-3 col-sm-12 mb-3 text-center">
-                <div class="card border-dark border-0">
-                  <img src="img/3dcg.png" class="card-img-top" alt="3dcg">
-                  <div class="card-body">
-                    <h3 class="card-title">3DCG</h3>
-                    <p class="card-text">Autodesk 3ds MaxやMaya、Chinema4D等を使用した3DCG制作が出来ます。</p>
-                    <a class="btn btn-primary align-bottom" href="movie.html" target="_blank">作品はこちら</a>
+                  <div class="card border-dark border-0">
+                    <img alt="3dcg" class="card-img-top" src="img/3dcg.png">
+                    <div class="card-body">
+                      <h3 class="card-title">3DCG</h3>
+                      <p class="card-text">Autodesk 3ds MaxやMaya、Chinema4D等を使用した3DCG制作が出来ます。</p>
+                      <a class="btn btn-primary align-bottom" href="graphic.html">作品はこちら</a>
+                    </div>
                   </div>
-                </div>
                 </div>
 
                 <div class="col-md-3 col-sm-12 mb-3 text-center">
-                <div class="card border-dark border-0">
-                  <img src="img/web02.png" class="card-img-top" alt="web">
-                  <div class="card-body">
-                    <h3 class="card-title">Webデザイン</h3>
-                    <p class="card-text">Bootstrapというフレームワークを用いたWebサイトの制作を行っています。</p>
+                  <div class="card border-dark border-0">
+                    <img alt="web" class="card-img-top" src="img/web02.png">
+                    <div class="card-body">
+                      <h3 class="card-title">Webデザイン</h3>
+                      <p class="card-text">Bootstrapというフレームワークを用いたWebサイトの制作を行っています。</p>
+                    </div>
                   </div>
-                </div>
                 </div>
                 <div class="col-md-3 col-sm-12 mb-3 text-center ">
-                <div class="card border-dark border-0">
-                  <img src="img/illura.png" class="card-img-top" alt="illura">
-                  <div class="card-body">
-                    <h3 class="card-title">Illustration</h3>
-                    <p class="card-text">Adobe Illustraorを使用した、ロゴタイプ・シンボルマーク等のデザインを学びました。</p>
+                  <div class="card border-dark border-0">
+                    <img alt="illura" class="card-img-top" src="img/illura.png">
+                    <div class="card-body">
+                      <h3 class="card-title">Illustration</h3>
+                      <p class="card-text">Adobe Illustraorを使用した、ロゴタイプ・シンボルマーク等のデザインを学びました。</p>
+                    </div>
                   </div>
-                </div>
                 </div>
               </div>
             </div>
@@ -129,15 +100,33 @@
       </div>
       <div class="row bg-light">
         <div class="col-lg-6 col-md-12 py-3 px-3">
-            <div class="card border-dark mb-3">
-              <h5 class="card-header">更新履歴</h5>
-              <p class="card-text">
-              <dl class="px-4">
-                <dt>2019/06/07</dt>
-                <dd>本ページ公開</dd>
-              </dl>
+          <div class="row">
+            <div class="col">
+              <div class="card border-dark mb-3">
+                <h5 class="card-header">更新履歴</h5>
+                <p class="card-text">
+                <dl class="px-4">
+                  <dt>2019/06/07</dt>
+                  <dd>本ページ公開</dd>
+                </dl>
 
+              </div>
             </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="card border-dark mb-3">
+                <h5 class="card-header">連絡先</h5>
+                <p class="card-text ">
+                <ul>
+                  <li>m011714144@edu.teu.ac.jp</li>
+                  <li><a href="https://www.facebook.com/tsukasuga3" target="_blank">facebook</a></li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="col-lg-6 col-md-12 py-3 px-3">
@@ -149,8 +138,9 @@
               <div class="col-lg-8 col-md-12">
                 <div class="card-body">
                   <h4 class="card-title">菅原 司</h4>
-                  <p class="card-text"><p>横浜市出身。現在、東京工科大学三年生、専門分野は3DCGやモーショングラフィックスを用いた映像制作。
-                  主に3ds MaxやAfter Effectsを学習中。最近ではUnityを始めようとしている。</p>
+                  <p class="card-text">
+                  <p>横浜市出身。現在、東京工科大学三年生、専門分野は3DCGやモーショングラフィックスを用いた映像制作。
+                    主に3ds MaxやAfter Effectsを学習中。最近ではUnityを始めようとしている。</p>
                   <p class="card-text">
                     <small class="text-muted">Last updated 2019/06/07</small>
                   </p>
@@ -167,6 +157,7 @@
       </div>
     </div>
   </div>
+
 </div>
 
 <script crossorigin="anonymous"
