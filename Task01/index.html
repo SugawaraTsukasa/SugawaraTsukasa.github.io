@@ -15,6 +15,15 @@
       font-size: 15px;
       line-height: 1.5em;
     }
+    h1 {
+      padding: 0.25em 0.5em;/*上下 左右の余白*/
+      background: transparent;/*背景透明に*/
+      border-left: solid 5px #a6d3c8;/*左線*/
+    }
+
+    h4 {
+      border-bottom: solid 2px #a6d3c8;
+    }
 
   </style>
 </head>
@@ -37,7 +46,38 @@
     <div class="col-lg-8 col-md-12 mx-auto px-md-5 px-sm-3">
       <div class="row">
         <div class="col">
-
+          <div class="row d-none d-md-block d-sm-none">
+            <div class="col py-5">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <!-- インジケータの設定 -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                  </li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <!-- スライドさせる画像の設定 -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/tama01.jpg" alt="多摩01" class="img-fluid">
+                  </div><!-- /.carousel-item -->
+                  <div class="carousel-item">
+                    <img src="img/tama2.jpg" alt="tama02" class="img-fluid">
+                  </div><!-- /.carousel-item -->
+                  <div class="carousel-item">
+                    <img src="img/tachikawa.jpg" alt="立川" class="img-fluid">
+                  </div><!-- /.carousel-item -->
+                </div><!-- /.carousel-inner -->
+                <!-- スライドコントロールの設定 -->
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  ...
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  ...
+                </a>
+              </div><!-- /.carousel -->
+            </div>
+          </div>
           <div class="row">
             <div class="col pl-2 py-3">
               <nav aria-label="パンくずリスト">
@@ -59,7 +99,7 @@
                       <p class="text-secondary py-3">2019/06/14</p>
                     </div>
                     <div class="py-3 mb-5">
-                      <img alt="芝桜" class="img-fluid" src="img/shibazakura.jpg">
+                      <img alt="芝桜" class="img-fluid img-thumbnail" src="img/shibazakura.jpg">
                     </div>
                     <p>ついに今週も金曜日、あっという間に週末を迎えました。</p>
                     <p>さて今日、卒研室選抜の第一回申告の結果が発表され、多くの三年生は無事に希望の卒研室への配属が決まったかと思います。</p>
@@ -77,7 +117,7 @@
                       <p class="text-secondary">2019/06/10</p>
                     </div>
                     <div class="py-3 mb-5">
-                      <img alt="京都" class="img-fluid" src="img/kyoto.jpg">
+                      <img alt="京都" class="img-fluid img-thumbnail" src="img/kyoto.jpg">
                     </div>
                     <p>さて土日が終わり、今日からまた講義が始まりました。今週は多くの講義が第9回目の講義になるのではないでしょうか。もう後期もほとんど終盤ですね。
                       いよいよ三年生は今週の金曜日に卒業研究室の選抜結果が発表されます。希望の研究室に採用されるかどうか、結果が楽しみです。
@@ -98,7 +138,7 @@
                       <p class="text-secondary py-3">2019/06/09</p>
                     </div>
                     <div class="py-3 mb-5">
-                      <img alt="横浜" class="img-fluid" src="img/yokohama.jpg">
+                      <img alt="横浜" class="img-fluid img-thumbnail" src="img/yokohama.jpg">
                     </div>
                     <p>今期履修しているプロジェクト演習「実践的Web開発」で中間課題が出たので取り組み始めました。その内容は本Webページの制作です。
                       LINE BLOG的なものと聞いているので、出来るだけ忠実に再現できるように頑張りたいと思います。</p>
