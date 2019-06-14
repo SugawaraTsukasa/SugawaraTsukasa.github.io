@@ -15,10 +15,11 @@
       font-size: 15px;
       line-height: 1.5em;
     }
+
     h2 {
-      padding: 0.25em 0.5em;/*上下 左右の余白*/
-      background: transparent;/*背景透明に*/
-      border-left: solid 5px #a6d3c8;/*左線*/
+      padding: 0.25em 0.5em; /*上下 左右の余白*/
+      background: transparent; /*背景透明に*/
+      border-left: solid 5px #a6d3c8; /*左線*/
     }
 
     h4 {
@@ -29,10 +30,11 @@
 </head>
 <body>
 <div class="container-fluid">
+  <!--ナビゲーションヘッダー-->
   <div class="row bg-success">
     <div class="col-lg-8 col-md-12 mx-auto px-md-5 pl-sm-3 py-3 bg-success text-white">
       <a class="text-white" href="index.html">
-        <div class="float-left pl-2"><h2>Blog</h2>
+        <div class="float-left pl-2"><p class="h2 pt-2">Blog</p>
         </div>
       </a>
       <div class="float-right"><a class="btn btn-outline-light btn-lg rounded-pill" href="https://www.teu.ac.jp/"
@@ -44,40 +46,44 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-lg-8 col-md-12 mx-auto px-md-5 px-sm-3">
+      <!--ピックアップコンテンツ-->
       <div class="row">
         <div class="col">
           <div class="row d-none d-md-block d-sm-none">
             <div class="col py-5">
-              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
                 <!-- インジケータの設定 -->
                 <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                  <li class="active" data-slide-to="0" data-target="#carouselExampleIndicators">
                   </li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+                  <!-- /.carousel-item -->
+                  <!-- /.carousel-inner -->
+                  <!-- スライドコントロールの設定 -->
+                  <li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
                 </ol>
                 <!-- スライドさせる画像の設定 -->
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="img/tama01.jpg" alt="多摩01" class="img-fluid">
+                    <img alt="多摩01" class="img-fluid" src="img/tama01.jpg">
                   </div><!-- /.carousel-item -->
                   <div class="carousel-item">
-                    <img src="img/tama2.jpg" alt="tama02" class="img-fluid">
+                    <img alt="tama02" class="img-fluid" src="img/tama2.jpg">
                   </div><!-- /.carousel-item -->
                   <div class="carousel-item">
-                    <img src="img/tachikawa.jpg" alt="立川" class="img-fluid">
-                  </div><!-- /.carousel-item -->
-                </div><!-- /.carousel-inner -->
-                <!-- スライドコントロールの設定 -->
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <img alt="立川" class="img-fluid" src="img/tachikawa.jpg">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button">
                   ...
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <a class="carousel-control-next" data-slide="next" href="#carouselExampleIndicators" role="button">
                   ...
                 </a>
               </div><!-- /.carousel -->
             </div>
           </div>
+          <!--パンくずリスト-->
           <div class="row">
             <div class="col pl-2 py-3">
               <nav aria-label="パンくずリスト">
@@ -88,8 +94,10 @@
               </nav>
             </div>
           </div>
+          <!--コンテンツエリア-->
           <div class="row">
             <div class="col-md-9 col-sm-12">
+              <!--記事1-->
               <div class="row">
                 <div class="col px-4 py-3 pr-md-5 pr-sm-4 mb-5">
                   <div class="border-bottom">
@@ -102,13 +110,17 @@
                       <img alt="芝桜" class="img-fluid img-thumbnail" src="img/shibazakura.jpg">
                     </div>
                     <p>ついに今週も金曜日、あっという間に週末を迎えました。</p>
-                    <p>さて今日、卒研室選抜の第一回申告の結果が発表され、多くの三年生は無事に希望の卒研室への配属が決まったかと思います。</p>
+                    <p>さて今日の昼頃に卒研室選抜の第一回申告の結果が発表され、多くの三年生は卒研室への配属が決まったかと思います。
+                      私が希望した研究室は12人の定員に対して27人の希望者がいましたが、その倍率2.25倍という激戦の中、無事その研究室に配属が決まりました。
+                      作品で押しまくった志望理由書の効果がでたのでしょうか。（笑）</p>
+                    <p>具体的な研究テーマは決まっていないのですが、ARコンテンツや映像制作に関する研究をしようかと思っているので、より良い研究テーマが決められるよう色々模索してみようと思います。</p>
                     <div class="py-5">
                       <a class="btn btn-outline-success rounded-pill" href="">いいね</a>
                     </div>
                   </div>
                 </div>
               </div>
+              <!--記事2-->
               <div class="row">
                 <div class="col px-4 py-3 pr-md-5 pr-sm-4 mb-3">
                   <div class="border-bottom">
@@ -129,11 +141,11 @@
                   </div>
                 </div>
               </div>
+              <!--記事3-->
               <div class="row">
-                <div class="col px-4 py-3 pr-md-5 pr-sm-4 mb-5">
+                <div class="col px-4 py-3 pr-md-5 pr-sm-4">
                   <div class="border-bottom">
                     <div class="pb-4">
-
                       <h2 id="article1">中間課題始めました。</h2>
                       <p class="text-secondary py-3">2019/06/09</p>
                     </div>
@@ -153,15 +165,17 @@
                 </div>
               </div>
             </div>
+            <!--サイドバー-->
             <div class="col-md-3 col-sm-12">
               <div class="row">
                 <div class="col px-4 py-3">
+                  <!--著名者情報-->
                   <div class="row">
                     <div class="col px-3 py-3">
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item text-center px-0 py-0 pb-2">
                           <img alt="顔写真" class="img-fluid pb-3" src="../SUGA2019/img/MyPicture.png">
-                          <h2>カレー</h2>
+                          <h3>カレー</h3>
                         </li>
                         <li class="list-group-item px-0 py-3">
                           <ul class="list-unstyled text-secondary">
@@ -176,40 +190,45 @@
                       </ul>
                     </div>
                   </div>
+                  <!--Twitter-->
                   <div class="row">
-                    <div class="col px-3 py-3">
-                      <h4>Twitter/Facebook</h4>
-                      <div class="row py-3">
-                        <div class="col-6">
-                          <a class="btn btn-primary rounded-pill" href="">Twitter</a></div>
-                        <div class="col-6">
-                          <a class="btn btn-primary rounded-pill" href="">Facebook</a>
-                        </div>
+                    <div class="col px-3 pb-3">
+                      <h4>Twitter</h4>
+                      <div class="text-center pt-sm-4 pb-3">
+                        <img alt="アイコン" class="img-fluid pb-md-3" src="../190515/img/01-min.png">
+                        <h5 class="pt-sm-3">@TUTcurry</h5>
+                        <div class="py-3">
+                          <a class="btn btn-primary rounded-pill" href="">フォロー</a></div>
                       </div>
                     </div>
                   </div>
+                  <!--過去記事-->
                   <div class="row">
-                    <div class="col px-3 py-3">
+                    <div class="col px-3">
                       <h4 class="mb-4">過去記事</h4>
                       <ul class="list-unstyled">
                         <li class=""><a href="#article3">
-                          <p><span class="text-dark">卒研室 第一回申告の結果がでました。</span><br><span class="text-secondary">2019/06/14</span></p>
+                          <p><span class="text-dark">卒研室 第一回申告の結果がでました。</span><br><span class="text-secondary">2019/06/14</span>
+                          </p>
                         </a>
                         </li>
 
                         <li class=""><a href="#article2">
-                          <p><span class="text-dark">第9週始まりました。</span><br><span class="text-secondary">2019/06/10</span></p>
+                          <p><span class="text-dark">第9週始まりました。</span><br><span class="text-secondary">2019/06/10</span>
+                          </p>
                         </a>
                         </li>
 
                         <li class=""><a href="#article1">
-                          <p><span class="text-dark">中間課題始めました。</span><br><span class="text-secondary">2019/06/09</span></p>
+                          <p><span class="text-dark">中間課題始めました。</span><br><span class="text-secondary">2019/06/09</span>
+                          </p>
                         </a>
                         </li>
 
                       </ul>
                     </div>
                   </div>
+                  <!--広告-->
                   <div class="row">
                     <div class="col px-3 py-3">
                       <h4>スポンサー広告</h4>
@@ -220,6 +239,13 @@
                                                                                src="img/Advertisement01.png"></a>
                         </div>
                       </div>
+                      <div class="row">
+                        <div class="col py-3">
+                          <a href="index.html" target="_blank"> <img alt="広告2"
+                                                                     class="img-fluid"
+                                                                     src="img/Advertisement02.png"></a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -228,8 +254,9 @@
           </div>
         </div>
       </div>
+      <!--フッター-->
       <div class="row">
-        <div class="col px-3 pt-3 pb-5 text-center text-secondary">
+        <div class="col px-3 pt-3 pb-5 text-sm-center text-md-right text-secondary">
           <span>&copy;2019 Practical Web development</span>
         </div>
       </div>
