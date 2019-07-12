@@ -2,42 +2,68 @@
 
 body {
   background-image: url(../img/BG.png);
+  font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', YuGothic, 'Yu Gothic Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
 }
 
-p{
-  font-size: 16px;
+p {
   margin-bottom: 16px;
 }
 
 h4 {
-  //color: #010079;
+/ / color: #010079;
   padding-left: 5px;
   margin-bottom: 13px;
   text-shadow: 0 0 5px white;
   border-left: solid 4px firebrick;
-  //background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
-  //background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+/ / background: -webkit-repeating-linear-gradient(- 45 deg, #cce7ff, #cce7ff 3 px, #e9f4ff 3 px, #e9f4ff 7 px);
+/ / background: repeating-linear-gradient(- 45 deg, #cce7ff, #cce7ff 3 px, #e9f4ff 3 px, #e9f4ff 7 px);
 }
 
-.nav{
+.nav {
   margin-bottom: 10px;
 }
 
-.contents-item{
+#works-nav {
+  padding: 15px;
+
+}
+
+.works-nav-item.col {
+  border: solid 3px black;
+}
+
+.item-active {
+  color: white;
+  background-color: gray;
+}
+
+.item-not-active {
+  color: gray;
+}
+
+
+.contents-item {
   margin-bottom: 30px;
 }
 
-.contents-item img{
+.contents-item img {
   border: solid 2px black;
 }
-#container{
+
+#container {
   padding: 40px;
 }
-#contents{
-  //background-color: rgba(150,150,150,0.5);
+
+#side {
+  padding-top: 80px;
+}
+
+#contents {
+  background-color: rgba(150, 150, 150, 0.1);
   padding: 40px 40px;
 }
+
 #footer {
   background-color: black;
   color: white;
