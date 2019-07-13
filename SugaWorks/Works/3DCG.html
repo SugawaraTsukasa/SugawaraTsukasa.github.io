@@ -10,8 +10,8 @@
 </head>
 
 <body>
-<div class="container-fluid">
-  <div class="row">
+<div class="container-fluid" id="wrap">
+  <div class="row" id="main">
     <!--PCでの幅は10としスマホでは画面幅いっぱいに表示-->
     <div class="col-lg-10 col-md-12 mx-auto" id="container">
       <div class="row">
@@ -19,23 +19,25 @@
         <div class="col-md-3 col-sm-12 d-none d-md-block d-sm-none" id="side">
           <ul class="list-unstyled">
             <!--作品-->
-            <li><a href=""><img src="../img/Works.png" class="img-fluid nav" alt="作品"
+            <li><a href="3DCG.html"><img src="../img/Works.png" class="img-fluid nav" alt="作品"
                                 onmouseover="this.src='../img/workshov.png'"
                                 onmouseout="this.src='../img/Works.png'"></a></li>
             <!--自己紹介-->
-            <li><a href=""><img src="../img/Profile.png" class="img-fluid nav" alt="作品"
+            <li><a href="../Profile.html"><img src="../img/Profile.png" class="img-fluid nav" alt="作品"
                                 onmouseover="this.src='../img/Profilehov.png'"
                                 onmouseout="this.src='../img/Profile.png'"></a></li>
             <!--お問い合わせ-->
-            <li><a href=""><img src="../img/Contact.png" class="img-fluid nav" alt="作品"
+            <li><a href="../Contact.html"><img src="../img/Contact.png" class="img-fluid nav" alt="作品"
                                 onmouseover="this.src='../img/Contacthov.png'"
                                 onmouseout="this.src='../img/Contact.png'"></a></li>
           </ul>
         </div>
         <!--メインコンテンツ-->
-        <div class="col-md-9 col-sm-12" id="contents">
+        <div class="col-md-9 col-sm-12 works" id="contents">
           <div class="row">
             <div class="col">
+              <h1>WORKS</h1>
+              <!--作品ページ内ナビゲーション-->
           <div class="row" id="works-nav">
             <div class="col works-nav-item item-active">
               <a href="3DCG.html" class="item-active"><h3>3DCGモデリング</h3></a>
@@ -49,8 +51,9 @@
           </div>
             </div>
           </div>
+          <!--ページ説明-->
           <div class="row">
-            <div class="col">
+            <div class="col text-item">
               <p>3Dモデリング作品です。クリックすると各作品の詳細ページにジャンプします。</p>
             </div>
 
@@ -98,9 +101,11 @@
             </div>
           </div>
         </div>
+        <!--メインコンテンツ終了-->
       </div>
     </div>
   </div>
+  <!--フッター-->
   <div class="row" id="footer">
     <div class="col mx-auto text-center">
       <p>&copy; 2019 SugaWorks</p>
