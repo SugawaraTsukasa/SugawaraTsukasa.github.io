@@ -31,7 +31,7 @@ li{
 
 }
 
-.works-nav-item.col {
+.works-nav-item{
   border: solid 3px black;
 }
 
@@ -72,7 +72,7 @@ li{
 }
 
 #side {
-  padding-top: 80px;
+  padding-top: 120px;
 }
 
 #contents {
