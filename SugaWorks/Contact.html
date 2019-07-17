@@ -10,6 +10,38 @@
 </head>
 
 <body>
+
+<!--スマホ用ナビ-->
+<nav class="navbar navbar-expand-lg navbar-dark nav-color text-center fixed-top d-md-none">
+  <a class="navbar-brand" href="">SugaWorks</a>
+  <button aria-controls="navbar" aria-expanded="false" aria-label="ナビゲーションの切替" class="navbar-toggler" data-target="#navbar"
+          data-toggle="collapse" type="button">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-around justify-content-md-center" id="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link  text-light" href="">TOP</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link  text-light" href="Works/3DCG.html">WORKS</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link  text-light" href="Profile.html">PROFILE</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link  text-light" href="Contact.html">CONTACT</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
 <div class="container-fluid" id="wrap">
   <div class="row" id="main">
     <!--PCでの幅は10としスマホでは画面幅いっぱいに表示-->
@@ -18,6 +50,10 @@
         <!--サイドバー-->
         <div class="col-md-3 col-sm-12 d-none d-md-block d-sm-none" id="side">
           <ul class="list-unstyled">
+            <!--トップ-->
+            <li><a href=""><img src="img/Top.png" class="img-fluid nav" alt="トップ"
+                                onmouseover="this.src='img/Tophov.png'"
+                                onmouseout="this.src='img/Top.png'"></a></li>
             <!--作品-->
             <li><a href="Works/3DCG.html"><img src="img/Works.png" class="img-fluid nav" alt="作品"
                                                onmouseover="this.src='img/workshov.png'"
@@ -39,7 +75,7 @@
               <h1>Contact</h1>
               <div class="text-item">
               <p>ご連絡は下記メールアドレスまでお願いいたします。</p>
-                <a href="mailto:info@example.com">m011714144@edu.teu.ac.jp</a>
+                <a href="mailto:m011714144@edu.teu.ac.jp">m011714144@edu.teu.ac.jp</a>
               </div>
             </div>
 
