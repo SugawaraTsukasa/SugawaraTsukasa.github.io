@@ -10,6 +10,19 @@ html{
     font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', YuGothic, 'Yu Gothic Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
   }
 
+body::before {
+  content: "";
+  background: url(../img/BG.png) no-repeat center center;
+  background-size: cover;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
   p {
     font-size: 20px;
     margin-bottom: 16px;
