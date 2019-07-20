@@ -1,148 +1,146 @@
 @charset "utf-8";
 html {
-    overflow: auto;
+  overflow: auto;
 }
-
 body {
-    background-image: url(../img/BG.png);
-    background-attachment: fixed;
-    overflow: hidden;
-    min-width: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', YuGothic, 'Yu Gothic Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  background-image: url(../img/BG.png);
+  background-attachment: fixed;
+  overflow: hidden;
+  min-width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', YuGothic, 'Yu Gothic Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
 }
-
 body::before {
-    content: "";
-    background: url(../img/BG.png) no-repeat center center;
-    background-size: cover;
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
+  content: "";
+  background: url(../img/BG.png) no-repeat center center;
+  background-size: cover;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
 }
-
 p {
-    font-size: 20px;
-    margin-bottom: 16px;
-    line-height: 2.0rem;
-    word-break: break-word;
+  font-size: 16px;
+  margin-bottom: 16px;
+  line-height: 2.0rem;
+  word-break: break-word;
 }
-
+h1 {
+  border-bottom: solid 3px #2866DA;
+}
 h4 {
-    padding-left: 5px;
-    margin-bottom: 13px;
-    text-shadow: 0 0 5px white;
-    border-left: solid 4px firebrick;
+  padding-left: 5px;
+  margin-bottom: 13px;
+  text-shadow: 0 0 5px white;
+  border-left: solid 4px #2866DA;
 }
-
 li {
-    font-size: 20px;
+  font-size: 20px;
 }
-
 nav {}
-
 .nav {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-
 .nav-color {
-    background: black;
+  background: black;
 }
-
 #works-nav {
-    padding: 15px;
-
+  padding: 15px;
 }
-
 .works-nav-item {
-    border: solid 3px black;
+  border: solid 3px black;
 }
-
 .item-active {
-    color: white;
-    background-color: gray;
+  color: white;
+  background-color: gray;
 }
-
 .item-not-active {
-    color: gray;
+  color: gray;
 }
-
 .contents-item {
-    margin-bottom: 30px;
+  margin: 30px 0;
 }
-
 .contents-item img {
-    border: solid 2px black;
+  border: solid 2px black;
 }
-
 .text-item {
-    margin: 40px 0;
+  margin: 40px 0;
+}
+.parent {
+  width: 100%;
+  position: relative;
 }
 
+.parent img{
+	  border:solid 2px #2866DA;
+}
+.child {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}
+.child > a {
+  color: white;
+  border-bottom: solid 2px white;
+  text-decoration: none;
+}
 iframe {
-    background-color: rgba(255, 255, 255, 0.5);
-    ;
+  background-color: rgba(255, 255, 255, 0.5);
 }
-
 #logo-side {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
-
 #side > .WhatsNews {
-    margin-top: 60px;
+  margin-top: 60px;
 }
-
 #main {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
 }
-
 #wrap {
-    position: relative;
-    width: 100%;
-    min-height: calc(100vh);
-
-
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh);
 }
-
 #container {
-    padding: 40px;
+  padding: 40px;
 }
-
 #side {
-    padding-top: 50px;
+  padding-top: 50px;
 }
-
 #contents {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 76px 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 76px 40px;
 }
-
 #contents.works {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 40px 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px 40px;
 }
-
-
 #footer {
-    background-color: black;
-    width: 100%;
-    height: 80px;
-    color: white;
-    padding: 20px;
-    position: absolute;
-    bottom: 0;
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  color: white;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
 }
-
 #footer p {
-    margin-bottom: -16px;
+  margin-bottom: -16px;
 }
-
 @media screen and (max-width: 575px) {
-    #container {
-        padding: 40px 20px;
-    }
-
+	p{
+		font-size: 20px;
+	}
+  #container {
+    padding: 40px 20px;
+  }
 }
