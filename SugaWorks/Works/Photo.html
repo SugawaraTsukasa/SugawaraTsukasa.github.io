@@ -1,191 +1,202 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
-  <link rel="stylesheet" href="../css/default.css" type="text/css">
-  <link href="../css/lightbox.min.css" rel="stylesheet">
-  <script src="../js/lightbox-plus-jquery.min.js" type="text/javascript"></script>
-  <title>写真</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link rel="stylesheet" href="../css/default.css" type="text/css">
+    <link href="../css/lightbox.min.css" rel="stylesheet">
+    <script src="../js/lightbox-plus-jquery.min.js" type="text/javascript"></script>
+    <title>写真</title>
 </head>
 
 <body>
 
-<!--スマホ用ナビ-->
-<nav class="navbar navbar-expand-lg navbar-dark nav-color text-center fixed-top d-md-none">
-  <a class="navbar-brand mx-auto" href="">SugaWorks</a>
-  <button aria-controls="navbar" aria-expanded="false" aria-label="ナビゲーションの切替" class="navbar-toggler" data-target="#navbar"
-          data-toggle="collapse" type="button">
+    <!--スマホ用ナビ-->
+    <nav class="navbar navbar-expand-lg navbar-dark nav-color text-center fixed-top d-md-none">
+        <button aria-controls="navbar" aria-expanded="false" aria-label="ナビゲーションの切替" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse justify-content-around justify-content-md-center" id="navbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="../index.html">
+        <div class="collapse navbar-collapse justify-content-around justify-content-md-center" id="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html"><a href="index.html"><img src="../img/logo.png" class="img-fluid"
+                                                                        alt="ロゴ"></a>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">
           <img src="../img/Top_white.png" class="img-fluid nav" alt="トップ"
                onmouseover="this.src='../img/Tophov.png'"
                onmouseout="this.src='../img/Top_white.png'"></a>
-      </li>
-    </ul>
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="../Works/3DCG.html">
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../Works/3DCG.html">
           <img src="../img/Works_white.png" class="img-fluid nav" alt="作品"
                onmouseover="this.src='../img/workshov.png'"
                onmouseout="this.src='../img/Works_white.png'"></a>
-      </li>
-    </ul>
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="../Profile.html">
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../Profile.html">
           <img src="../img/Profile_white.png" class="img-fluid nav" alt="プロフィール"
                onmouseover="this.src='../img/Profilehov.png'"
                onmouseout="this.src='../img/Profile_white.png'"></a>
-      </li>
-    </ul>
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="../Contact.html">
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../Contact.html">
           <img src="../img/Contact_white.png" class="img-fluid nav" alt="お問い合わせ"
                onmouseover="this.src='../img/Contacthov.png'"
                onmouseout="this.src='../img/Contact_white.png'">
         </a>
-      </li>
-    </ul>
-  </div>
-</nav>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-<div class="container-fluid" id="wrap">
-  <div class="row" id="main">
-    <!--PCでの幅は10としスマホでは画面幅いっぱいに表示-->
-    <div class="col-lg-10 col-md-12 mx-auto" id="container">
-      <div class="row">
-        <!--サイドバー-->
-        <div class="col-md-3 col-sm-12 d-none d-md-block d-sm-none" id="side">
-          <ul class="list-unstyled">
-            <!--トップ-->
-            <li><a href="../index.html"><img src="../img/Top.png" class="img-fluid nav" alt="トップ"
+    <div class="container-fluid" id="wrap">
+        <div class="row" id="main">
+            <!--PCでの幅は10としスマホでは画面幅いっぱいに表示-->
+            <div class="col-lg-10 col-md-12 mx-auto" id="container">
+                <div class="row">
+                    <!--サイドバー-->
+                    <div class="col-md-3 col-sm-12 d-none d-md-block d-sm-none" id="side">
+                        <!--サイドバーロゴ-->
+                        <div id="logo-side">
+                            <a href="../index.html"><img src="../img/logo.png" class="img-fluid" alt="ロゴ"></a>
+                        </div>
+                        <ul class="list-unstyled">
+                            <!--トップ-->
+                            <li><a href="../index.html"><img src="../img/Top.png" class="img-fluid nav" alt="トップ"
                                 onmouseover="this.src='../img/Tophov.png'"
                                 onmouseout="this.src='../img/Top.png'"></a></li>
-            <!--作品-->
-            <li><a href="3DCG.html"><img src="../img/Works.png" class="img-fluid nav" alt="作品"
+                            <!--作品-->
+                            <li><a href="3DCG.html"><img src="../img/Works.png" class="img-fluid nav" alt="作品"
                                          onmouseover="this.src='../img/workshov.png'"
                                          onmouseout="this.src='../img/Works.png'"></a></li>
-            <!--自己紹介-->
-            <li><a href="../Profile.html"><img src="../img/Profile.png" class="img-fluid nav" alt="プロフィール"
+                            <!--自己紹介-->
+                            <li><a href="../Profile.html"><img src="../img/Profile.png" class="img-fluid nav" alt="プロフィール"
                                                onmouseover="this.src='../img/Profilehov.png'"
                                                onmouseout="this.src='../img/Profile.png'"></a></li>
-            <!--お問い合わせ-->
-            <li><a href="../Contact.html"><img src="../img/Contact.png" class="img-fluid nav" alt="お問い合わせ"
+                            <!--お問い合わせ-->
+                            <li><a href="../Contact.html"><img src="../img/Contact.png" class="img-fluid nav" alt="お問い合わせ"
                                                onmouseover="this.src='../img/Contacthov.png'"
                                                onmouseout="this.src='../img/Contact.png'"></a></li>
-          </ul>
+                        </ul>
+                    </div>
+                    <!--メインコンテンツ-->
+                    <div class="col-md-9 col-sm-12 works" id="contents">
+                        <div class="row">
+                            <div class="col">
+                                <h1>WORKS</h1>
+                                <!--作品ページ内ナビゲーション-->
+                                <div class="row" id="works-nav">
+                                    <div class="col-md-4 col-sm-12 works-nav-item">
+                                        <a href="3DCG.html" class="item-not-active">
+                                            <h3>3DCGモデリング</h3>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 works-nav-item">
+                                        <a href="" class="item-not-active">
+                                            <h3>MOVIE</h3>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 works-nav-item item-active">
+                                        <a href="Photo.html" class="item-active">
+                                            <h3>Photo</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--ページ説明-->
+                        <div class="row">
+                            <div class="col text-item">
+                                <p>ミラーレス一眼等で撮影した写真です。クリックすると各写真が拡大表示されます。</p>
+                            </div>
+
+                        </div>
+                        <!--以下作品--->
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="contents-item">
+                                    <h4>みなとみらい</h4>
+                                    <a href="../img/yokohama.jpg" data-lightbox="Photo" data-title="みなとみらい"><img src="../img/yokohama.jpg" class="img-fluid" alt="みなとみらい"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="contents-item">
+                                    <h4>京都タワー</h4>
+                                    <a href="../img/kyoto.jpg" data-lightbox="Photo" data-title="京都タワー"><img src="../img/kyoto.jpg" class="img-fluid" alt="京都タワー"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="contents-item">
+                                    <h4>朝日</h4>
+                                    <a href="../img/asahi.jpg" data-lightbox="Photo" data-title="朝日"><img src="../img/asahi.jpg" class="img-fluid" alt="朝日"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--作品の二段目-->
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="contents-item">
+                                    <h4>芝桜</h4>
+                                    <a href="../img/shibazakura.jpg" data-lightbox="Photo" data-title="芝桜"><img src="../img/shibazakura.jpg" class="img-fluid" alt="芝桜"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="contents-item">
+                                    <h4>秩父駅付近</h4>
+                                    <a href="../img/chichibueki.jpg" data-lightbox="Photo" data-title="秩父駅付近"><img src="../img/chichibueki.jpg" class="img-fluid" alt="秩父駅付近"></a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-12">
+                                <div class="contents-item">
+                                    <h4>下田の街並み</h4>
+                                    <a href="../img/shimoda.png" data-lightbox="Photo" data-title="下田の街並み"><img src="../img/shimoda.png" class="img-fluid" alt="下田"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--作品の三段目-->
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="contents-item">
+                                    <h4>星空</h4>
+                                    <a href="../img/hoshizora.jpg" data-lightbox="Photo" data-title="星空"><img src="../img/hoshizora.jpg" class="img-fluid" alt="星空"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="contents-item">
+                                    <h4>白波海岸</h4>
+                                    <a href="../img/shiranami%20kaigan.jpg" data-lightbox="Photo" data-title="白波海岸"><img src="../img/shiranami%20kaigan.jpg" class="img-fluid" alt="白波海岸"></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--メインコンテンツ終了-->
+                </div>
+            </div>
         </div>
-        <!--メインコンテンツ-->
-        <div class="col-md-9 col-sm-12 works" id="contents">
-          <div class="row">
-            <div class="col">
-              <h1>WORKS</h1>
-              <!--作品ページ内ナビゲーション-->
-              <div class="row" id="works-nav">
-                <div class="col-md-4 col-sm-12 works-nav-item">
-                  <a href="3DCG.html" class="item-not-active"><h3>3DCGモデリング</h3></a>
-                </div>
-                <div class="col-md-4 col-sm-12 works-nav-item">
-                  <a href="" class="item-not-active"><h3>MOVIE</h3></a>
-                </div>
-                <div class="col-md-4 col-sm-12 works-nav-item item-active">
-                  <a href="Photo.html" class="item-active"><h3>Photo</h3></a>
-                </div>
-              </div>
+        <!--フッター-->
+        <div class="row" id="footer">
+            <div class="col mx-auto text-center">
+                <p>&copy; 2019 SugaWorks</p>
             </div>
-          </div>
-          <!--ページ説明-->
-          <div class="row">
-            <div class="col text-item">
-              <p>ミラーレス一眼等で撮影した写真です。クリックすると各写真が拡大表示されます。</p>
-            </div>
-
-          </div>
-          <!--以下作品--->
-          <div class="row">
-            <div class="col-md-4 col-sm-12">
-              <div class="contents-item">
-                <h4>みなとみらい</h4>
-                <a href="../img/yokohama.jpg" data-lightbox="Photo" data-title="みなとみらい"><img src="../img/yokohama.jpg" class="img-fluid" alt="みなとみらい"></a>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="contents-item">
-                <h4>京都タワー</h4>
-                <a href="../img/kyoto.jpg" data-lightbox="Photo" data-title="京都タワー"><img src="../img/kyoto.jpg" class="img-fluid" alt="京都タワー"></a>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="contents-item">
-                <h4>朝日</h4>
-                <a href="../img/asahi.jpg" data-lightbox="Photo" data-title="朝日"><img src="../img/asahi.jpg" class="img-fluid" alt="朝日"></a>
-              </div>
-            </div>
-          </div>
-          <!--作品の二段目-->
-          <div class="row">
-            <div class="col-md-4 col-sm-12">
-              <div class="contents-item">
-                <h4>芝桜</h4>
-                <a href="../img/shibazakura.jpg"  data-lightbox="Photo" data-title="芝桜"><img src="../img/shibazakura.jpg" class="img-fluid" alt="芝桜"></a>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="contents-item">
-                <h4>秩父駅付近</h4>
-                <a href="../img/chichibueki.jpg" data-lightbox="Photo" data-title="秩父駅付近"><img src="../img/chichibueki.jpg" class="img-fluid" alt="秩父駅付近"></a>
-              </div>
-            </div>
-
-            <div class="col-md-4 col-sm-12">
-              <div class="contents-item">
-                <h4>下田の街並み</h4>
-                <a href="../img/shimoda.png" data-lightbox="Photo" data-title="下田の街並み"><img src="../img/shimoda.png" class="img-fluid" alt="下田"></a>
-              </div>
-            </div>
-          </div>
-          <!--作品の三段目-->
-          <div class="row">
-            <div class="col-md-4 col-sm-12">
-              <div class="contents-item">
-                <h4>星空</h4>
-                <a href="../img/hoshizora.jpg" data-lightbox="Photo" data-title="星空"><img src="../img/hoshizora.jpg" class="img-fluid" alt="星空"></a>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="contents-item">
-                <h4>白波海岸</h4>
-                <a href="../img/shiranami%20kaigan.jpg"  data-lightbox="Photo" data-title="白波海岸"><img src="../img/shiranami%20kaigan.jpg" class="img-fluid" alt="白波海岸"></a>
-              </div>
-            </div>
-
-          </div>
         </div>
-        <!--メインコンテンツ終了-->
-      </div>
     </div>
-  </div>
-  <!--フッター-->
-  <div class="row" id="footer">
-    <div class="col mx-auto text-center">
-      <p>&copy; 2019 SugaWorks</p>
-    </div>
-  </div>
-</div>
 
-<script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
