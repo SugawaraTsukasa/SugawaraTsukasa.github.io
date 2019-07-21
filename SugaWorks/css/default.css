@@ -123,6 +123,10 @@ nav {}
   color: white;
 }
 
+.WhatsNews{
+	padding: 15px 0;
+}
+
 iframe {
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -171,6 +175,6 @@ iframe {
 		font-size: 20px;
 	}
   #container {
-    padding: 40px 20px;
+    padding: 40px 0;
   }
 }
