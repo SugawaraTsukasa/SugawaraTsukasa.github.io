@@ -30,7 +30,7 @@ p {
 h1 {
   border-bottom: solid 3px #2866DA;
 }
-h4{
+h4 {
   padding-left: 5px;
   margin-bottom: 13px;
   text-shadow: 0 0 5px white;
@@ -59,14 +59,19 @@ nav {}
 .item-not-active {
   color: gray;
 }
-
+/*
 .toparea{
-	padding: 20px 0px;
+	margin-bottom: -15px;
+
 }
-
-.topimg { max-width: 100%; margin: 0 auto 50px;}
-.topimg img{ width: 100%;}
-
+*/
+.topimg {
+  max-width: 100%;
+  margin: 0 auto 50px;
+}
+.topimg img {
+  width: 100%;
+}
 .contents-item {
   margin: 30px 0;
 }
@@ -80,9 +85,8 @@ nav {}
   width: 100%;
   position: relative;
 }
-
-.parent img{
-	  border:none;
+.parent img {
+  border: none;
 }
 /*---
 .child {
@@ -104,38 +108,31 @@ nav {}
  text-decoration: none;
 }
 ---*/
-
-.description{
-	text-align: center;
-	margin-top: 5px;
-	padding-top: 10px;
+.description {
+  text-align: center;
+  margin-top: 5px;
+  padding-top: 10px;
 }
-
 .btn-flat-border {
   display: inline-block;
   padding: 0.3em 1em;
   text-decoration: none;
   color: #2866DA;
-	font-size: 20px;
+  font-size: 20px;
   border: solid 2px #2866DA;
   border-radius: 3px;
   transition: .4s;
 }
-
 .btn-flat-border:hover {
   background: #2866DA;
   color: white;
 }
-
-.WhatsNews{
-	padding: 15px 0;
+.WhatsNews {
+  padding: 15px 0;
 }
-
-.slick-prev:before,
-.slick-next:before {
-    color: #000000;
+.slick-prev:before, .slick-next:before {
+display: none;
 }
-
 iframe {
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -180,9 +177,12 @@ iframe {
   margin-bottom: -16px;
 }
 @media screen and (max-width: 575px) {
-	p{
-		font-size: 20px;
-	}
+  p {
+    font-size: 20px;
+  }
+  .toparea {
+    padding: 20px 0px;
+  }
   #container {
     padding: 40px 0;
   }
