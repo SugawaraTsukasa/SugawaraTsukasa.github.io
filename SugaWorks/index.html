@@ -7,7 +7,10 @@
 <link rel="apple-touch-icon" href="./apple-touch-icon.png">
 <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 <link rel="stylesheet" href="css/default.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <title>SugaWorks</title>
 </head>
 
@@ -86,21 +89,24 @@
               <h1>SUGA WORKS</h1>
               <p>菅原のポートフォリオサイトです。</p>
               <!--トップ画像-->
-				<div class="toparea">
-              <img src="img/making_min.png" class="img-fluid" alt="トップ画像"> 
-					</div>
-			</div>
+              <div class="toparea">
+                <div class="topimg">
+                  <div><img src="img/making_min.png" alt="キャラクターモデリング"></div>
+                  <div><img src="img/fx_comp.png" alt="爆発エフェクト"></div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12">
               <div class="contents-item">
                 <div class="parent"><img src="img/3dcg.png" class="img-fluid" alt="3DCG作品">
-					           <div class="description">
+                  <div class="description">
                     <p>3ds MaxでCG制作をしています。C4d、Mayaにも対応可能です。</p>
                     <a href="Works/3DCG.html" class="btn-flat-border">作品はこちら</a> </div>
                 </div>
               </div>
-			  </div>
+            </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
               <div class="contents-item">
                 <div class="parent"><img src="img/movie.png" class="img-fluid" alt="映像作品">
@@ -113,7 +119,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
               <div class="contents-item">
                 <div class="parent"><img src="img/photo.png" class="img-fluid" alt="写真作品">
-       					           <div class="description">
+                  <div class="description">
                     <p>ミラーレス一眼カメラ等を使用した風景等の写真撮影をしています。</p>
                     <a href="Works/Photo.html" class="btn-flat-border">作品はこちら</a> </div>
                 </div>
@@ -147,6 +153,16 @@
 <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
 <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/slick.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.topimg').slick({
+        autoplay: true,
+		  arrows: false,
+      });
+    });
+  </script>
 </body>
 </html>
