@@ -133,18 +133,16 @@ nav {}
 .slick-prev:before, .slick-next:before {
   display: none;
 }
-
-ol{
-		margin-left: -40px;
+ol {
+  margin-left: -40px;
 }
 .breadcrumbs ol li {
   display: inline;
-
   list-style-type: none;
 }
 .breadcrumbs ol li::after {
   content: '>';
-		padding: 0 10px;
+  padding: 0 10px;
 }
 .breadcrumbs ol li:last-child::after {
   display: none;
@@ -174,7 +172,7 @@ iframe {
 }
 #contents {
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 76px 40px;
+  padding: 25px 40px;
 }
 #contents.works {
   background-color: rgba(255, 255, 255, 0.4);
