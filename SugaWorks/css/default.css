@@ -22,7 +22,7 @@ body::before {
   z-index: -1;
 }
 p {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 16px;
   line-height: 2.0rem;
   word-break: break-word;
@@ -131,7 +131,23 @@ nav {}
   padding: 15px 0;
 }
 .slick-prev:before, .slick-next:before {
-display: none;
+  display: none;
+}
+
+ol{
+		margin-left: -40px;
+}
+.breadcrumbs ol li {
+  display: inline;
+
+  list-style-type: none;
+}
+.breadcrumbs ol li::after {
+  content: '>';
+		padding: 0 10px;
+}
+.breadcrumbs ol li:last-child::after {
+  display: none;
 }
 iframe {
   background-color: rgba(255, 255, 255, 0.5);

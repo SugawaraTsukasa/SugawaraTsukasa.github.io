@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="../../favicon.ico">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+<link rel="stylesheet" href="../../css/default.css" type="text/css">
+<link href="../../css/lightbox.min.css" rel="stylesheet">
+<script src="../../js/lightbox-plus-jquery.min.js" type="text/javascript"></script>
+<title>ミサカ</title>
+</head>
+
+<body>
+
+<!--スマホ用ナビ-->
+<nav class="navbar navbar-expand-lg navbar-dark nav-color text-center fixed-top d-md-none">
+  <button aria-controls="navbar" aria-expanded="false" aria-label="ナビゲーションの切替" class="navbar-toggler" data-target="#navbar"
+          data-toggle="collapse" type="button"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse justify-content-around justify-content-md-center" id="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item"> <a class="nav-link" href="../../index.html"><a href="../index.html"><img src="../../img/logo.png" class="img-fluid"
+                                                                        alt="ロゴ"></a> </a> </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item"> <a class="nav-link" href="../../index.html"> <img src="../../img/Top_white.png" class="img-fluid nav" alt="トップ"
+               onmouseover="this.src='../../img/Tophov.png'"
+               onmouseout="this.src='../../img/Top_white.png'"></a> </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item"> <a class="nav-link" href="../3DCG.html"> <img src="../../img/Works_white.png" class="img-fluid nav" alt="作品"
+               onmouseover="this.src='../../img/workshov.png'"
+               onmouseout="this.src='../../img/Works_white.png'"></a> </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item"> <a class="nav-link" href="../../Profile.html"> <img src="../../img/Profile_white.png" class="img-fluid nav" alt="プロフィール"
+               onmouseover="this.src='../../img/Profilehov.png'"
+               onmouseout="this.src='../../img/Profile_white.png'"></a> </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item"> <a class="nav-link" href="../../Contact.html"> <img src="../../img/Contact_white.png" class="img-fluid nav" alt="お問い合わせ"
+               onmouseover="this.src='../../img/Contacthov.png'"
+               onmouseout="this.src='../../img/Contact_white.png'"> </a> </li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid" id="wrap">
+  <div class="row" id="main"> 
+    <!--PCでの幅は10としスマホでは画面幅いっぱいに表示-->
+    <div class="col-lg-10 col-md-12 mx-auto" id="container">
+      <div class="row"> 
+        <!--サイドバー-->
+        <div class="col-md-3 col-sm-12 d-none d-md-block d-sm-none" id="side">
+          <div id="logo-side"> <a href="../../index.html"><img src="../../img/logo.png" class="img-fluid" alt="ロゴ"></a> </div>
+          <ul class="list-unstyled">
+            <!--トップ-->
+            <li><a href="../../index.html"><img src="../../img/Top.png" class="img-fluid nav" alt="トップ"
+                                onmouseover="this.src='../../img/Tophov.png'"
+                                onmouseout="this.src='../../img/Top.png'"></a></li>
+            <!--作品-->
+            <li><a href="../3DCG.html"><img src="../../img/Works.png" class="img-fluid nav" alt="作品"
+                                         onmouseover="this.src='../../img/workshov.png'"
+                                         onmouseout="this.src='../../img/Works.png'"></a></li>
+            <!--自己紹介-->
+            <li><a href="../../Profile.html"><img src="../../img/Profile.png" class="img-fluid nav" alt="プロフィール"
+                                               onmouseover="this.src='../../img/Profilehov.png'"
+                                               onmouseout="this.src='../../img/Profile.png'"></a></li>
+            <!--お問い合わせ-->
+            <li><a href="../../Contact.html"><img src="../../img/Contact.png" class="img-fluid nav" alt="お問い合わせ"
+                                               onmouseover="this.src='../../img/Contacthov.png'"
+                                               onmouseout="this.src='../../img/Contact.png'"></a></li>
+          </ul>
+        </div>
+        <!--メインコンテンツ-->
+        <div class="col-md-9 col-sm-12 works" id="contents">
+          <div class="row">
+            <div class="col">
+				<!--パンくずリスト-->
+              <div class="breadcrumbs">
+                <ol>
+                  <li><a href="../../index.html">トップ</a></li>
+                  <li><a href="../3DCG.html">作品（3DCGモデリング）</a></li>
+                  <li>ミサカ</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h1>WORKS</h1>
+              <!--作品ページ内ナビゲーション-->
+              <div class="row" id="works-nav">
+                <div class="col-md-4 col-sm-12 works-nav-item item-active"> <a href="3DCG.html" class="item-active">
+                  <h3>3DCGモデリング</h3>
+                  </a> </div>
+                <div class="col-md-4 col-sm-12 works-nav-item"> <a href="Movie.html" class="item-not-active">
+                  <h3>MOVIE</h3>
+                  </a> </div>
+                <div class="col-md-4 col-sm-12 works-nav-item"> <a href="Photo.html" class="item-not-active">
+                  <h3>Photo</h3>
+                  </a> </div>
+              </div>
+            </div>
+          </div>
+          <!--ページ説明-->
+          <div class="row">
+            <div class="col">
+              <p>ここに内容が入ります。</p>
+            </div>
+          </div>
+          <!--以下作品---> 
+        </div>
+        <!--メインコンテンツ終了--> 
+      </div>
+    </div>
+  </div>
+  <!--フッター-->
+  <div class="row" id="footer">
+    <div class="col mx-auto text-center">
+      <p>&copy; 2019 SugaWorks</p>
+    </div>
+  </div>
+</div>
+<script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> 
+<script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+<script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
