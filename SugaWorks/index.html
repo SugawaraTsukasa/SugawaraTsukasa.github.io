@@ -13,9 +13,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <title>SugaWorks</title>
 </head>
-
 <body>
-
 <!--スマホ用ナビ-->
 <nav class="navbar navbar-expand-lg navbar-dark nav-color text-center fixed-top d-md-none">
   <button aria-controls="navbar" aria-expanded="false" aria-label="ナビゲーションの切替" class="navbar-toggler"
@@ -49,12 +47,12 @@
   </div>
 </nav>
 <div class="container-fluid" id="wrap">
-  <div class="row" id="main"> 
+  <div class="row" id="main">
     <!--PCでの幅は10としスマホでは画面幅いっぱいに表示-->
     <div class="col-lg-10 col-md-12 mx-auto" id="container">
-      <div class="row"> 
+      <div class="row">
         <!--サイドバー-->
-        <div class="col-md-3 col-sm-12 d-none d-md-block d-sm-none" id="side"> 
+        <div class="col-md-3 col-sm-12 d-none d-md-block d-sm-none" id="side">
           <!--サイドバーロゴ-->
           <div id="logo-side"> <a href="index.html"><img src="img/logo.png" class="img-fluid" alt="ロゴ"></a> </div>
           <ul class="list-unstyled">
@@ -75,12 +73,13 @@
                                             onmouseover="this.src='img/Contacthov.png'"
                                             onmouseout="this.src='img/Contact.png'"></a></li>
           </ul>
-          
           <!--新着情報--->
+          <!--
           <div class="WhatsNews">
             <h4>新着情報</h4>
             <iframe src="WhatsNew.html" width="100%" height="300px;"> インラインフレーム対応ブラウザでご覧いただけます。 </iframe>
           </div>
+-->
         </div>
         <!--メインコンテンツ-->
         <div class="col-md-9 col-sm-12" id="contents">
@@ -88,14 +87,23 @@
             <div class="col">
               <h1>SUGA WORKS</h1>
               <p>菅原のポートフォリオサイトです。</p>
-              <!--トップ画像-->
+            </div>
+          </div>
+          <div class="row">
+            <!--トップ画像-->
+            <div class="col-lg-8 col-md-12">
               <div class="toparea">
                 <div class="topimg">
                   <div class="slick-slide"><a href=""><img src="img/pu/Character_top.png" alt="キャラクターモデリング"></a></div>
-                  <div class="slick-slide"><a href=""><img src="img/pu/Cell_tone_fx_top.jpg" alt="爆発エフェクト"></a></div>
-                  <div class="slick-slide"><a href=""><img src="img/pu/Railgun_top.jpg" alt="超電磁砲"></a></div>
+                  <div class="slick-slide"><a href="https://www.youtube.com/watch?v=UUo3GFJZLm0" target="_blank"><img src="img/pu/Cell_tone_fx_top.jpg" alt="爆発エフェクト"></a></div>
+                  <div class="slick-slide"><a href="Works/3dcg/misaka.html"><img src="img/pu/Railgun_top.jpg" alt="超電磁砲"></a></div>
                 </div>
               </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <!--新着情報--->
+              <h4>新着情報</h4>
+              <iframe src="WhatsNew.html"> インラインフレーム対応ブラウザでご覧いただけます。 </iframe>
             </div>
           </div>
           <div class="row">
@@ -128,7 +136,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col"> 
+            <div class="col">
               <!--新着情報--->
               <div class="WhatsNews d-md-none">
                 <h4>新着情報</h4>
@@ -137,8 +145,7 @@
             </div>
           </div>
         </div>
-        
-        <!--メインコンテンツ終了--> 
+        <!--メインコンテンツ終了-->
       </div>
     </div>
   </div>
@@ -150,13 +157,13 @@
   </div>
 </div>
 <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> 
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-<script type="text/javascript" src="js/slick.js"></script> 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/slick.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
       $('.topimg').slick({
