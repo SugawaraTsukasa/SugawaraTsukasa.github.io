@@ -54,7 +54,7 @@ nav {}
 }
 .item-active {
   color: white;
-  background-color: gray;
+  background-color: #2866DA;
 }
 .item-not-active {
   color: gray;
@@ -198,6 +198,6 @@ iframe {
     padding: 20px 0px;
   }
   #container {
-    padding: 40px 0;
+    padding: 40px 0 0 0;
   }
 }
