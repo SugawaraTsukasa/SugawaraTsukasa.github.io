@@ -77,7 +77,7 @@ for (let i = 0; i < tweets.length; i++) {
       + "<img src="
       +
       tweets[i].avatar
-      + " alt='サムネ' width=50 height=50 border='1'>"
+      + " alt='サムネ' width=98 height=100 border='1'>"
       + "</div>"
       + "<div class='text'>"
       + "<b>"
@@ -110,7 +110,7 @@ function jBtn() {
           + "<img src="
           +
           tweets[i].avatar
-          + " alt='サムネ' width=50 height=50 border='1'>"
+          + " alt='サムネ' width=98 height=100 border='1'>"
           + "</div>"
           + "<div class='text'>"
           + "<b>"
@@ -145,7 +145,7 @@ function sBtn() {
           + "<img src="
           +
           tweets[i].avatar
-          + " alt='サムネ' width=50 height=50 border='1'>"
+          + " alt='サムネ' width=98 height=100 border='1'>"
           + "</div>"
           + "<div class='text'>"
           + "<b>"
@@ -180,7 +180,7 @@ function tBtn() {
           + "<img src="
           +
           tweets[i].avatar
-          + " alt='サムネ' width=50 height=50 border='1'>"
+          + " alt='サムネ' width=98 height=100 border='1'>"
           + "</div>"
           + "<div class='text'>"
           + "<b>"
@@ -214,7 +214,7 @@ function allBtn() {
         + "<img src="
         +
         tweets[i].avatar
-        + " alt='サムネ' width=50 height=50 border='1'>"
+        + " alt='サムネ' width=98 height=100 border='1'>"
         + "</div>"
         + "<div class='text'>"
         + "<b>"
