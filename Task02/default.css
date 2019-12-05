@@ -1,0 +1,60 @@
+body{
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'メイリオ', Meiryo, "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+ul{
+  margin-left: -40px;
+  margin-top: 0;
+  margin-bottom: -10px;
+}
+
+hr{
+  clear: both;
+}
+
+img{
+  border-color: #cccccc;
+}
+
+.thm{
+  float: left;
+  padding-right: 16px;
+}
+.text{
+  float: left;
+}
+
+.btn{
+  padding-bottom:20px;
+}
+
+h1 {
+  position: relative;
+  padding: 0.6em;
+  background: #2866DA;
+  color: white;
+}
+
+.btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #2866DA;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+#answer{
+  padding: 16px;
+
+  border: solid #2866DA 10px;
+}

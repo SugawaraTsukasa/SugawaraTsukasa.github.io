@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>後期中間課題</title>
+  <link rel="stylesheet" href="default.css">
 </head>
 <body>
 <h1>中間課題</h1>
-<hr>
-<button onclick="allBtn()">全部</button>
-<button onclick="sBtn()">三郎BOT</button>
-<button onclick="jBtn()">次郎</button>
-<button onclick="tBtn()">太郎</button>
+<div class="btn">
+<button onclick="allBtn()" class="btn-square">全部</button>
+<button onclick="sBtn()" class="btn-square">三郎BOT</button>
+<button onclick="jBtn()" class="btn-square">次郎</button>
+<button onclick="tBtn()" class="btn-square">太郎</button>
+</div>
+<div id="index">Tweet 🐤</div>
 <div id="answer"></div>
+<div id="footer">
+  <p>&copy; 2019 TSUKASA SUGAWARA</p>
+</div>
 <script type="text/javascript" src="Tweet.js"></script>
 </body>
 </html>

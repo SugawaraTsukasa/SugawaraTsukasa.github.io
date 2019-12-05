@@ -73,13 +73,13 @@ answerHTML = "<ul style=\"list-style:none;\">";
 for (let i = 0; i < tweets.length; i++) {
   answerHTML = answerHTML
       + "<li>"
-      + "<div>"
+      + "<div class='thm'>"
       + "<img src="
       +
       tweets[i].avatar
       + " alt='サムネ' width=50 height=50 border='1'>"
       + "</div>"
-      + "<div>"
+      + "<div class='text'>"
       + "<b>"
       + tweets[i].name
       + "</b>"
@@ -106,13 +106,13 @@ function jBtn() {
     if (tweets[i].name === "次郎") {
       answerHTML = answerHTML
           + "<li>"
-          + "<div>"
+          + "<div class='thm'>"
           + "<img src="
           +
           tweets[i].avatar
           + " alt='サムネ' width=50 height=50 border='1'>"
           + "</div>"
-          + "<div>"
+          + "<div class='text'>"
           + "<b>"
           + tweets[i].name
           + "</b>"
@@ -141,13 +141,13 @@ function sBtn() {
     if (tweets[i].name === "三郎BOT") {
       answerHTML = answerHTML
           + "<li>"
-          + "<div>"
+          + "<div class='thm'>"
           + "<img src="
           +
           tweets[i].avatar
           + " alt='サムネ' width=50 height=50 border='1'>"
           + "</div>"
-          + "<div>"
+          + "<div class='text'>"
           + "<b>"
           + tweets[i].name
           + "</b>"
@@ -176,13 +176,13 @@ function tBtn() {
     if (tweets[i].name === "太郎") {
       answerHTML = answerHTML
           + "<li>"
-          + "<div>"
+          + "<div class='thm'>"
           + "<img src="
           +
           tweets[i].avatar
           + " alt='サムネ' width=50 height=50 border='1'>"
           + "</div>"
-          + "<div>"
+          + "<div class='text'>"
           + "<b>"
           + tweets[i].name
           + "</b>"
@@ -210,13 +210,13 @@ function allBtn() {
   for (let i = 0; i < tweets.length; i++) {
     answerHTML = answerHTML
         + "<li>"
-        + "<div>"
+        + "<div class='thm'>"
         + "<img src="
         +
         tweets[i].avatar
         + " alt='サムネ' width=50 height=50 border='1'>"
         + "</div>"
-        + "<div>"
+        + "<div class='text'>"
         + "<b>"
         + tweets[i].name
         + "</b>"
