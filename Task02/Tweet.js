@@ -74,10 +74,10 @@ for (let i = 0; i < tweets.length; i++) {
   answerHTML = answerHTML
       + "<li>"
       + "<div class='thm'>"
-      + "<img src="
+      + "<img alt='サムネ' src="
       +
       tweets[i].avatar
-      + " alt='サムネ' width=98 height=100 border='1'>"
+      + ">"
       + "</div>"
       + "<div class='text'>"
       + "<b>"
@@ -107,10 +107,10 @@ function jBtn() {
       answerHTML = answerHTML
           + "<li>"
           + "<div class='thm'>"
-          + "<img src="
+          + "<img alt='サムネ' src="
           +
           tweets[i].avatar
-          + " alt='サムネ' width=98 height=100 border='1'>"
+          + ">"
           + "</div>"
           + "<div class='text'>"
           + "<b>"
@@ -142,10 +142,10 @@ function sBtn() {
       answerHTML = answerHTML
           + "<li>"
           + "<div class='thm'>"
-          + "<img src="
+          + "<img alt='サムネ' src="
           +
           tweets[i].avatar
-          + " alt='サムネ' width=98 height=100 border='1'>"
+          + ">"
           + "</div>"
           + "<div class='text'>"
           + "<b>"
@@ -177,10 +177,10 @@ function tBtn() {
       answerHTML = answerHTML
           + "<li>"
           + "<div class='thm'>"
-          + "<img src="
+          + "<img alt='サムネ' src="
           +
           tweets[i].avatar
-          + " alt='サムネ' width=98 height=100 border='1'>"
+          + ">"
           + "</div>"
           + "<div class='text'>"
           + "<b>"
@@ -211,10 +211,10 @@ function allBtn() {
     answerHTML = answerHTML
         + "<li>"
         + "<div class='thm'>"
-        + "<img src="
+        + "<img alt='サムネ' src="
         +
         tweets[i].avatar
-        + " alt='サムネ' width=98 height=100 border='1'>"
+        + ">"
         + "</div>"
         + "<div class='text'>"
         + "<b>"

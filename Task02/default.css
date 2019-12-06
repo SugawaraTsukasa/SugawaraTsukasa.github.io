@@ -15,7 +15,9 @@ hr{
 }
 
 img{
-  border-color: #cccccc;
+  width:98px;
+  height:100px;
+  border:solid #cccccc 1px;
 }
 
 .thm{
