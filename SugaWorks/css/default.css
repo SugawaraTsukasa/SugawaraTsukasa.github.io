@@ -3,6 +3,7 @@ html {
   overflow: auto;
 }
 body {
+  color: white;
   background-image: url(../img/BG.png);
   background-attachment: fixed;
   overflow: hidden;
@@ -33,7 +34,7 @@ h1 {
 h4 {
   padding-left: 5px;
   margin-bottom: 13px;
-  text-shadow: 0 0 5px white;
+ // text-shadow: 0 0 5px white;
   border-left: solid 4px #2866DA;
 }
 li {
@@ -174,11 +175,11 @@ iframe {
   padding-top: 50px;
 }
 #contents {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(10, 10, 10, 0.9);
   padding: 30px 40px;
 }
 #contents.works {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(10, 10, 10, 0.9);
   padding: 40px 40px;
 }
 #footer {
