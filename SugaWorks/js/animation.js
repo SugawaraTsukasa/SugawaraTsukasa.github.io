@@ -5,14 +5,12 @@ const anim = lottie.loadAnimation({
   autoplay: true,
   path: 'data.json'
 });
-
 $(function () {
   $(".mainSite").css("display", "none");
   setTimeout(function () {
     $('.loadAnime').fadeOut();
   }, 2000);
 });
-
 $(function () {
   $(".mainSite").css({opacity: '0'});
   setTimeout(function () {
