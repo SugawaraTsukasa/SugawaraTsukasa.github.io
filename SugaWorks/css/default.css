@@ -152,6 +152,15 @@ ol {
 .breadcrumbs ol li:last-child::after {
   display: none;
 }
+
+.loadAnime {
+  opacity: .9;
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
 iframe {
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -200,7 +209,7 @@ iframe {
     font-size: 20px;
   }
   .toparea {
-    padding: 20px 0px;
+    padding: 20px 0;
   }
   #container {
     padding: 40px 0 0 0;
