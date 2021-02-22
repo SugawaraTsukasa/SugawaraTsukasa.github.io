@@ -28,7 +28,7 @@ h2 {
 
 h3 {
   font-size: 1.8em;
-  width: 8em;
+  width: 10em;
 }
 
 img {
@@ -274,11 +274,11 @@ section {
     height: 1.7em;
   }
 
-  #spec .item {
+  #spec .item, .enemy-content .item  {
     width: 100%;
   }
 
-  #spec .img {
+  #spec .img, .enemy-content .img  {
     width: 100%;
     padding: 20px 0 20px 0;
   }
