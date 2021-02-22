@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Yu Gothic Medium", "遊ゴシック Medium", "Yu Gothic", "遊ゴシック体", "ヒラギノ丸ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  padding: 0.25em;/*文字周りの余白*/
+  border-left: solid 5px #2866DA;/*左線（実線 太さ 色）*/
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width /***/:auto;
+}
+
+#wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+header {
+  width: 960px;
+  border:dashed 1px #999;
+}
+
+#content {
+  border:dashed 1px #999;
+  margin: 10px 0px 10px 0px;
+}
+
+.content-item {
+  margin-bottom: 50px;
+
+}
+#content-container {
+  padding: 10px;
+}
+
+#product .container .item {
+  background: #fff;
+  color: #000;
+}
+
+#product .container .img {
+width: 25%;
+}
+#product dl {
+  display: flex;
+  margin: 0px 0px 20px;
+}
+#product dt {
+  width: 7em;
+  background: #2866DA;
+  color: white;
+  margin: 0 15px 0 0;
+  padding: 0 5px;
+}
+dd {
+  margin-inline-start: 40px;
+}
+footer {
+  text-align: center;
+  border: dashed 1px #999;
+}
+
+#nav {
+  margin: 10px 0px 10px 0px;
+}
+.container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#gallery .container {
+  justify-content: space-between;
+}
+header .item {
+  width: 50%;
+}
+#gallery .container img {
+  padding: 3px;
+  width: 23%;
+}
+.container #nav{
+  justify-content:space-between;
+}
+
+.item{
+  background: #2866DA;
+  color: #fff;
+}
+
+.btn-style {
+  text-align: center;
+  font-size: 32px;
+  width: 200px;
+  height: 50px;
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #2866DA;/*色*/
+  border: solid 1px #0f9ada;/*線色*/
+  border-radius: 26px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+
+}
+
+.btn-style:active{
+  /*押したとき*/
+  background: #ffaa22;/*色*/
+  box-shadow: none;
+  text-shadow: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
+section {
+  display: block;
+}
+
+@media screen and (max-width:720px){
+#wrap {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+  header .item {
+    width: 1000%;
+  }
+
+  #nav {
+    display: none;
+  }
+  #content {
+    width: 100%;
+  }
+  #gallery .container img {
+    padding: 5px;
+    width: 45%;
+    margin-bottom: 10px;
+  }
+#product dt {
+  width: 4rem;
+}
+
+  #product .container .img {
+    width: 75%;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+
+
+
+}
