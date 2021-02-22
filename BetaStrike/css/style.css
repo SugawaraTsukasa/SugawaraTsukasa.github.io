@@ -118,6 +118,10 @@ dd {
   width: 70%;
 }
 
+.enemy-content{
+  margin-top: 20px;
+}
+
 #spec .img, .enemy-content .img {
   width: 30%;
   text-align: center;
