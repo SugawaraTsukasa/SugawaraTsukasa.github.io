@@ -35,7 +35,7 @@ header {
 
 #content {
   border:dashed 1px #999;
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0 10px 0;
 }
 
 .content-item {
@@ -56,7 +56,7 @@ width: 25%;
 }
 #product dl {
   display: flex;
-  margin: 0px 0px 20px;
+  margin: 0 0 20px;
 }
 #product dt {
   width: 7em;
@@ -74,7 +74,7 @@ footer {
 }
 
 #nav {
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0 10px 0;
 }
 .container {
   display: flex;
