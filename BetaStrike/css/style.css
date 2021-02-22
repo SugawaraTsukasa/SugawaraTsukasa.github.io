@@ -81,6 +81,7 @@ footer {
   margin: 0 auto;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 #gallery .container {
