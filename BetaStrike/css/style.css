@@ -1,11 +1,15 @@
 @charset "UTF-8";
 
 html {
-  font-size: 100%;
+  font-size: 62.5%;
+  width: 100%;
+  height: auto;
+min-height: 100vh;
 }
 body {
   font-family: "Yu Gothic Medium", "遊ゴシック Medium", "Yu Gothic", "遊ゴシック体", "ヒラギノ丸ゴ Pro W3", sans-serif;
   line-height: 1.7;
+  font-size: 1rem;
   color: #000;
 }
 
@@ -16,12 +20,11 @@ a {
 h2 {
   padding: 0.25em;/*文字周りの余白*/
   border-left: solid 5px #2866DA;/*左線（実線 太さ 色）*/
+  font-size: 2.0em;
 }
 
 img {
   max-width: 100%;
-  height: auto;
-  width /***/:auto;
 }
 
 #wrap {
@@ -46,25 +49,6 @@ header {
   padding: 10px;
 }
 
-#product .container .item {
-  background: #fff;
-  color: #000;
-}
-
-#product .container .img {
-width: 25%;
-}
-#product dl {
-  display: flex;
-  margin: 0 0 20px;
-}
-#product dt {
-  width: 7em;
-  background: #2866DA;
-  color: white;
-  margin: 0 15px 0 0;
-  padding: 0 5px;
-}
 dd {
   margin-inline-start: 40px;
 }
@@ -76,6 +60,7 @@ footer {
 #nav {
   margin: 10px 0 10px 0;
 }
+
 .container {
   display: flex;
   margin: 0 auto;
@@ -83,7 +68,24 @@ footer {
   flex-wrap: wrap;
   align-items: flex-start;
 }
+.info-area dl {
+  width: 100%;
+  height: 150px;
+  overflow: auto;
+border-top: solid 1px #2866DA;
+  border-bottom: solid 1px #2866DA;
+}
+.info-area dt {
+ font-size: 1.2em;
+  margin: 15px 0 0 0;
+}
 
+.info-area dd {
+  margin-left: 0;
+  padding: 10px 0 20px 0;
+  font-size: 1.5em;
+  border-bottom: dotted 1px #2866DA;
+}
 #gallery .container {
   justify-content: space-between;
 }
@@ -128,6 +130,36 @@ header .item {
   text-shadow: none;
 }
 
+#product .container .item {
+  background: #fff;
+  color: #000;
+}
+
+#product .container .img {
+  width: 25%;
+}
+
+#product dl,#product dt,
+#product dd{
+  font-size: 1.4rem;
+  line-height: 1.7em;
+  font-weight: 600;
+}
+#product dl {
+  display: flex;
+  margin: 0 0 20px 0;
+}
+
+#product dt {
+  width: 6.5em;
+  height: 2em;
+  background: #2866DA;
+  color: #fff;
+  margin: 0 15px 0 0;
+  padding: 5px 5px 0 5px;
+  white-space: nowrap;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
 section {
   display: block;
@@ -150,14 +182,19 @@ section {
   #content {
     width: 100%;
   }
+
+  .info-area dt {
+    font-size: 1.8rem;
+  }
+
+  .info-area dd {
+    font-size: 2.0rem;
+  }
   #gallery .container img {
     padding: 5px;
     width: 45%;
     margin-bottom: 10px;
   }
-#product dt {
-  width: 4rem;
-}
 
   #product .container .img {
     width: 75%;
