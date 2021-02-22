@@ -11,16 +11,18 @@ body {
   line-height: 1.7;
   font-size: 1rem;
   color: #000;
-}
 
-a {
-  text-decoration: none;
+  background-image: url("../img/web_bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h2 {
   padding: 0.25em;/*文字周りの余白*/
   border-left: solid 5px #2866DA;/*左線（実線 太さ 色）*/
   font-size: 2.0em;
+  text-shadow: 0 0 10px #fff;
 }
 
 h3 {
@@ -56,6 +58,7 @@ header {
   font-size: 1.7em;
   line-height: 1.8em;
   font-weight: 600;
+  text-shadow: 0 0 10px #fff;
 }
 
 .content-item ul{
@@ -63,6 +66,7 @@ header {
   line-height: 1.8em;
   font-weight: 600;
   margin-left: -1em;
+  text-shadow: 0 0 10px #fff;
 }
 #content-container {
   padding: 10px;
@@ -70,10 +74,6 @@ header {
 
 dd {
   margin-inline-start: 40px;
-}
-footer {
-  text-align: center;
-  border: dashed 1px #999;
 }
 
 #nav {
@@ -116,7 +116,7 @@ header .item {
   width: 50%;
 }
 #gallery .container img {
-  border: solid 3px #2866DA;
+  border: solid 3px #333;
   width: 23%;
 }
 .container #nav{
@@ -202,10 +202,15 @@ header .item {
   white-space: nowrap;
 }
 
+#product dd {
+  text-shadow: 0 0 10px #fff;
+}
+
 footer {
   padding: 40px 0;
   text-align: center;
 }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
 section {
   display: block;
@@ -245,7 +250,7 @@ section {
 
   #gallery .container img {
     width: 45%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   #product .container .img {
