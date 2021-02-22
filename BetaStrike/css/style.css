@@ -4,8 +4,9 @@ html {
   font-size: 62.5%;
   width: 100%;
   height: auto;
-min-height: 100vh;
+  min-height: 100vh;
 }
+
 body {
   font-family: "Yu Gothic Medium", "遊ゴシック Medium", "Yu Gothic", "遊ゴシック体", "ヒラギノ丸ゴ Pro W3", sans-serif;
   line-height: 1.7;
@@ -19,15 +20,14 @@ body {
 }
 
 h2 {
-  padding: 0.25em;/*文字周りの余白*/
-  border-left: solid 5px #2866DA;/*左線（実線 太さ 色）*/
+  padding: 0.25em; /*文字周りの余白*/
+  border-left: solid 5px #2866DA; /*左線（実線 太さ 色）*/
   font-size: 2.0em;
   text-shadow: 0 0 10px #fff;
 }
 
 h3 {
   font-size: 1.8em;
-  border-bottom: solid 2px #2866DA;
   width: 8em;
 }
 
@@ -39,13 +39,14 @@ img {
   width: 960px;
   margin: 0 auto;
 }
+
 header {
   width: 960px;
-  border:dashed 1px #999;
+  border: dashed 1px #999;
 }
 
 #content {
-  border:dashed 1px #999;
+  border: dashed 1px #999;
   margin: 10px 0 10px 0;
 }
 
@@ -54,20 +55,21 @@ header {
 
 }
 
-.content-item p{
+.content-item p {
   font-size: 1.7em;
   line-height: 1.8em;
   font-weight: 600;
   text-shadow: 0 0 10px #fff;
 }
 
-.content-item ul{
+.content-item ul {
   font-size: 1.7em;
   line-height: 1.8em;
   font-weight: 600;
   margin-left: -1em;
   text-shadow: 0 0 10px #fff;
 }
+
 #content-container {
   padding: 10px;
 }
@@ -87,15 +89,17 @@ dd {
   flex-wrap: wrap;
   align-items: flex-start;
 }
+
 .info-area dl {
   width: 100%;
   height: 150px;
   overflow: auto;
-border-top: solid 1px #2866DA;
+  border-top: solid 1px #2866DA;
   border-bottom: solid 1px #2866DA;
 }
+
 .info-area dt {
- font-size: 1.2em;
+  font-size: 1.2em;
   margin: 15px 0 0 0;
 }
 
@@ -105,22 +109,40 @@ border-top: solid 1px #2866DA;
   font-size: 1.5em;
   border-bottom: dotted 1px #2866DA;
 }
+
 #spec .container {
   justify-content: flex-start;
 }
 
+#spec .item, .enemy-content .item {
+  width: 70%;
+}
+
+#spec .img, .enemy-content .img {
+  width: 30%;
+  text-align: center;
+}
+
+#spec .img img, .enemy-content .img img {
+  width: 200px;
+}
+
+
 #gallery .container {
   justify-content: space-between;
 }
+
 header .item {
   width: 50%;
 }
+
 #gallery .container img {
   border: solid 3px #333;
   width: 23%;
 }
-.container #nav{
-  justify-content:space-between;
+
+.container #nav {
+  justify-content: space-between;
 }
 
 .btn-style {
@@ -134,16 +156,16 @@ header .item {
   padding: 0.25em 0.5em;
   text-decoration: none;
   color: #FFF;
-  background: #2866DA;/*色*/
-  border: solid 1px #0f9ada;/*線色*/
+  background: #2866DA; /*色*/
+  border: solid 1px #0f9ada; /*線色*/
   border-radius: 10px;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
-  text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
 
-.btn-style:active{
+.btn-style:active {
   /*押したとき*/
-  background: #ffaa22;/*色*/
+  background: #ffaa22; /*色*/
   box-shadow: none;
   text-shadow: none;
 }
@@ -159,16 +181,16 @@ header .item {
   padding: 0.25em 0.5em;
   text-decoration: none;
   color: #FFF;
-  background: #333;/*色*/
-  border: solid 1px #000;/*線色*/
+  background: #333; /*色*/
+  border: solid 1px #000; /*線色*/
   border-radius: 10px;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
-  text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
 
-.btn-style-enemy:active{
+.btn-style-enemy:active {
   /*押したとき*/
-  background: #ffaa22;/*色*/
+  background: #ffaa22; /*色*/
   box-shadow: none;
   text-shadow: none;
 }
@@ -181,12 +203,13 @@ header .item {
   width: 25%;
 }
 
-#product dl,#product dt,
-#product dd{
+#product dl, #product dt,
+#product dd {
   font-size: 1.4rem;
   line-height: 1.7em;
   font-weight: 600;
 }
+
 #product dl {
   display: flex;
   margin: 0 0 20px 0;
@@ -216,13 +239,15 @@ section {
   display: block;
 }
 
-@media screen and (max-width:720px){
-#wrap {
+@media screen and (max-width: 720px) {
+  #wrap {
     width: 100%;
   }
+
   header {
     width: 100%;
   }
+
   header .item {
     width: 1000%;
   }
@@ -230,6 +255,7 @@ section {
   #nav {
     display: none;
   }
+
   #content {
     width: 100%;
   }
@@ -248,6 +274,15 @@ section {
     height: 1.7em;
   }
 
+  #spec .item {
+    width: 100%;
+  }
+
+  #spec .img {
+    width: 100%;
+    padding: 20px 0 20px 0;
+  }
+
   #gallery .container img {
     width: 45%;
     margin-bottom: 20px;
@@ -258,8 +293,6 @@ section {
     padding: 20px;
     margin-bottom: 40px;
   }
-
-
 
 
 }
