@@ -47,6 +47,7 @@ img {
 
 header {
   width: 960px;
+  padding: 0 20px 0 20px;
 }
 
 #content {
@@ -149,11 +150,12 @@ dd {
   justify-content: space-between;
 }
 
-header .container {
-  padding: 0 20px 0 20px;
+#sp-top {
+  display: none;
 }
-header .item {
-  width: 50%;
+
+#pc-top {
+  width: 100%;
 }
 
 #gallery .container img {
@@ -266,13 +268,18 @@ section {
 
   header {
     width: 100%;
-  }
-  header .container {
     padding: 0;
   }
-  header .item {
+
+ #sp-top{
+  display: block;
     width: 100%;
   }
+
+  #pc-top {
+    display: none;
+  }
+
   #sp-movie{
     margin: 20px 0 10px 0;
     padding: 0 20px 0 20px;

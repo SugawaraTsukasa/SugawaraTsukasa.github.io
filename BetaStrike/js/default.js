@@ -9,12 +9,12 @@ function enemyBtn01(){
 }
 
 function enemyBtn02(){
-  enemyHTML = '<div class="item img"><img src="img/enemy02.png" alt="突撃級"></div><div class="item enemy-text"><h3>突撃（デストロイヤー）級</h3><p>縦一列に連続5対出現する。全て倒すと高得点だが、その非常に高い機動性には注意が必要だ。<br>SCORE : +300</p></div>';
+  enemyHTML = '<div class="item img"><img src="img/enemy02.png" alt="突撃級"></div><div class="item enemy-text"><h3>突撃（デストロイヤー）級</h3><p>縦一列に連続5体出現する。全て倒すと高得点だが、その非常に高い機動性には注意が必要だ。<br>SCORE : +300</p></div>';
   enemy.innerHTML = enemyHTML;
 }
 
 function enemyBtn03(){
-  enemyHTML = '<div class="item img"><img src="img/enemy03.png" alt="要撃級"></div><div class="item enemy-text"><h3>要撃（グラップラー）級</h3><p>横一列に連続5対出現する。全て倒すと高得点だが、その前腕を使用した高い攻撃力には注意が必要だ。<br>SCORE : +500</p></div>';
+  enemyHTML = '<div class="item img"><img src="img/enemy03.png" alt="要撃級"></div><div class="item enemy-text"><h3>要撃（グラップラー）級</h3><p>横一列に連続5体出現する。全て倒すと高得点だが、その前腕を使用した高い攻撃力には注意が必要だ。<br>SCORE : +500</p></div>';
   enemy.innerHTML = enemyHTML;
 }
 
