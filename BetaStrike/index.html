@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>BETA STRIKE</title>
   <meta name="description" content="TVアニメ「シュヴァルツェスマーケン」の世界が舞台のシンプルな2Dシューティングゲーム">
-  <meta name="viewport" content="width=device-width,initial=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <!-- CSS -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -74,18 +74,13 @@
       <div id="enemy" class="content-item">
         <h2>敵キャラクター</h2>
         <div class="container">
-          <div class="item btn-style-enemy" onclick="">戦車級</div>
-          <div class="item btn-style-enemy" onclick="">突撃級</div>
-          <div class="item btn-style-enemy" onclick="">要撃級</div>
-          <div class="item btn-style-enemy" onclick="">要塞級</div>
+          <div class="item btn-style-enemy" onclick="enemyBtn01()">戦車級</div>
+          <div class="item btn-style-enemy" onclick="enemyBtn02()">突撃級</div>
+          <div class="item btn-style-enemy" onclick="enemyBtn03()">要撃級</div>
+          <div class="item btn-style-enemy" onclick="enemyBtn04()">要塞級</div>
         </div>
-        <div class="container enemy-content">
-          <div class="item img">
-            <img src="img/enemy01.png" alt="戦車級">
-          </div>
-          <div class="item">
-            <h3>戦車級（タンク級）</h3>
-          </div>
+        <div class="container enemy-content" id="enemy-content">
+          <!--ボタン操作により表示内容を更新する-->
         </div>
       </div>
       <div id="gallery" class="content-item">
@@ -95,6 +90,15 @@
           <img src="img/gallery02.PNG" alt="ギャラリー02" class="item">
           <img src="img/gallery03.PNG" alt="ギャラリー03" class="item">
           <img src="img/gallery04.PNG" alt="ギャラリー04" class="item">
+        </div>
+      </div>
+      <div id="movie" class="content-item">
+        <h2>ムービー</h2>
+        <div>
+          <!--
+          <a class="top-movie-link popup-movie external-link" href="https://www.youtube.com/watch?v=IP-OG3vm9h8" target="_blank" rel="noopener noreferrer">
+            <img src="img/top-btn-op.jpg" alt="OP"></a>
+            -->
         </div>
       </div>
       <div id="product" class="content-item">
@@ -157,5 +161,6 @@
     <p>&copy; 2021 BETA STRIKE / SugaWorks</p>
   </footer>
 </div>
+<script type="text/javascript" src="js/default.js" ></script>
 </body>
 </html>

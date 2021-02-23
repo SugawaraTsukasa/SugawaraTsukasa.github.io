@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 62.5%;
   width: 100%;
@@ -24,11 +29,11 @@ h2 {
   border-left: solid 5px #2866DA; /*左線（実線 太さ 色）*/
   font-size: 2.0em;
   text-shadow: 0 0 10px #fff;
+  margin: 0.8em 0 0.8em 0;
 }
 
 h3 {
   font-size: 1.8em;
-  width: 10em;
 }
 
 img {
@@ -42,17 +47,14 @@ img {
 
 header {
   width: 960px;
-  border: dashed 1px #999;
 }
 
 #content {
-  border: dashed 1px #999;
-  margin: 10px 0 10px 0;
+  margin-top: 10px;
 }
 
 .content-item {
   margin-bottom: 50px;
-
 }
 
 .content-item p {
@@ -66,12 +68,12 @@ header {
   font-size: 1.7em;
   line-height: 1.8em;
   font-weight: 600;
-  margin-left: -1em;
   text-shadow: 0 0 10px #fff;
+  padding-left: 1.5em;
 }
 
 #content-container {
-  padding: 10px;
+  padding: 20px;
 }
 
 dd {
@@ -79,7 +81,8 @@ dd {
 }
 
 #nav {
-  margin: 10px 0 10px 0;
+  margin: 20px 0 10px 0;
+  padding: 0 10px 0 10px;
 }
 
 .container {
@@ -122,6 +125,13 @@ dd {
   margin-top: 20px;
 }
 
+.enemy-content .enemy-text{
+  margin: 20px 0 20px 0;
+}
+
+.enemy-content p{
+  margin: 20px 0 20px 0;
+}
 #spec .img, .enemy-content .img {
   width: 30%;
   text-align: center;
@@ -136,6 +146,9 @@ dd {
   justify-content: space-between;
 }
 
+header .container {
+  padding: 0 20px 0 20px;
+}
 header .item {
   width: 50%;
 }
@@ -152,7 +165,7 @@ header .item {
 .btn-style {
   text-align: center;
   font-size: 32px;
-  width: 200px;
+  width: 180px;
   height: 50px;
   font-weight: 600;
   position: relative;
@@ -161,7 +174,7 @@ header .item {
   text-decoration: none;
   color: #FFF;
   background: #2866DA; /*色*/
-  border: solid 1px #0f9ada; /*線色*/
+  border: solid 1px #000; /*線色*/
   border-radius: 10px;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
@@ -251,9 +264,11 @@ section {
   header {
     width: 100%;
   }
-
+  header .container {
+    padding: 0;
+  }
   header .item {
-    width: 1000%;
+    width: 100%;
   }
 
   #nav {
@@ -278,6 +293,9 @@ section {
     height: 1.7em;
   }
 
+  .enemy-content .enemy-text {
+    text-align: center;
+  }
   #spec .item, .enemy-content .item  {
     width: 100%;
   }
