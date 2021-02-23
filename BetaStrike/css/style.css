@@ -282,6 +282,7 @@ dd {
 
 #product dd {
   text-shadow: 0 0 10px #fff;
+  padding-top: 5px;
 }
 
 footer {
