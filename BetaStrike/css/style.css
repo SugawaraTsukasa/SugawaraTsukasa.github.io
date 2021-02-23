@@ -48,6 +48,7 @@ img {
 header {
   width: 960px;
   padding: 0 20px 0 20px;
+  position: relative;
 }
 
 #content {
@@ -80,6 +81,21 @@ header {
 dd {
   margin-inline-start: 40px;
 }
+
+#sp-top {
+  display: none;
+}
+
+#pc-top {
+  width: 100%;
+}
+
+#pc-movie {
+position: absolute;
+  right: 60px;
+  bottom: 80px;
+}
+
 #sp-movie {
   display: none;
 }
@@ -148,14 +164,6 @@ dd {
 
 #gallery .container {
   justify-content: space-between;
-}
-
-#sp-top {
-  display: none;
-}
-
-#pc-top {
-  width: 100%;
 }
 
 #gallery .container img {
@@ -280,10 +288,20 @@ section {
     display: none;
   }
 
+#pc-movie {
+  display: none;
+}
+
   #sp-movie{
     margin: 20px 0 10px 0;
     padding: 0 20px 0 20px;
     display: block;
+    text-align: center;
+  }
+
+  #sp-movie:hover{
+    opacity: 0.6;
+    filter: brightness(110%);
   }
   #nav {
     display: none;
