@@ -79,6 +79,9 @@ header {
 dd {
   margin-inline-start: 40px;
 }
+#sp-movie {
+  display: none;
+}
 
 #nav {
   margin: 20px 0 10px 0;
@@ -270,7 +273,11 @@ section {
   header .item {
     width: 100%;
   }
-
+  #sp-movie{
+    margin: 20px 0 10px 0;
+    padding: 0 20px 0 20px;
+    display: block;
+  }
   #nav {
     display: none;
   }
