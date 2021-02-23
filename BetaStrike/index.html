@@ -12,31 +12,86 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.js'></script>
 </head>
 <body>
+<!--wrap-->
 <div id="wrap">
+  <!--ヘッダー-->
   <header>
-    <div>
+    <!--スマホ用ナビ-->
+    <div class="menu-btn"><img src="img/menu-btn.png" alt="menu" id="hamburgerImg"></div>
+    <nav class="sp-nav">
+      <ul>
+        <Li><a href="#top">
+          <div class="btn-style sp menu-btn-item">TOP</div>
+        </a></Li>
+        <Li><a href="#spec">
+          <div class="btn-style sp menu-btn-item">ABOUT</div>
+        </a></Li>
+        <Li><a href="#enemy">
+          <div class="btn-style sp menu-btn-item">ENEMY</div>
+        </a></Li>
+        <Li><a href="#gallery">
+          <div class="btn-style sp menu-btn-item">GALLERY</div>
+        </a></Li>
+        <Li><a href="#product">
+          <div class="btn-style sp menu-btn-item">PRODUCT</div>
+        </a></Li>
+      </ul>
+    </nav>
+    <!--javascript-->
+    <script type="text/javascript">
+      $(function () {
+        let img = document.getElementById("hamburgerImg");
+        let src = img.getAttribute('src');
+        console.log(src);
+        $(".sp-nav").hide();
+        $(".menu-btn").click(function () {
+          $(".sp-nav").toggle(300);
+          let src = img.getAttribute('src');
+          if (src === "img/menu-btn.png") {
+            $("#hamburgerImg").attr('src', 'img/menu-btn-hover.png');
+            console.log(1);
+          } else {
+            $("#hamburgerImg").attr('src', 'img/menu-btn.png');
+            console.log(2);
+          }
+        });
+        $(".menu-btn-item").click(function () {
+          $(".sp-nav").hide(300);
+        });
+      });
+    </script>
+    <!--javascript-->
+    <!--スマホ用ナビ-->
+    <div id="top">
       <div id="sp-top">
         <img src="img/sp_top.png" alt="スマートホン向けトップ画像">
       </div>
       <div id="pc-top">
         <img src="img/pc_top.png" alt="PC向けトップ画像">
       </div>
+      <!--PC用動画-->
       <div id="pc-movie">
         <a href="https://youtu.be/0jcVAJ-fkwo" target="_blank" data-lity="data-lity">
           <img src="img/btn_movie.png" alt="デモ"></a>
       </div>
+      <!--PC用動画-->
     </div>
+    <!--スマホ用ナビ-->
   </header>
+  <!--ヘッダー-->
+  <!--スマホ用動画-->
   <div id="sp-movie">
     <a href="https://youtu.be/0jcVAJ-fkwo" target="_blank" data-lity="data-lity">
       <img src="img/btn_movie.png" alt="デモ"></a>
   </div>
+  <!--スマホ用動画-->
+  <!--PC用ナビ-->
   <div id="nav" class="container">
     <a href="#spec">
-      <div class="item btn-style">SPEC</div>
+      <div class="item btn-style">ABOUT</div>
     </a>
     <a href="#enemy">
-      <div class="item btn-style">EMEMY</div>
+      <div class="item btn-style">ENEMY</div>
     </a>
     <a href="#gallery">
       <div class="item btn-style">GALLERY</div>
@@ -44,7 +99,7 @@
     <a href="#product">
       <div class="item btn-style">PRODUCT</div>
     </a>
-  </div>
+  </div><!--PC用ナビ-->
   <div id="content">
     <div id="content-container">
       <div id="info" class="content-item">
@@ -52,12 +107,13 @@
         <div class="info-area">
           <dl>
             <dt>2021/02/23</dt>
-            <dd>iPhone向けアプリ「BETA STRIKE」公式ホームページ公開！</dd>
+            <dd>公式ホームページ！</dd>
             <dt>2021/02/23</dt>
-            <dd>iPhone向けアプリ「BETA STRIKE」公式ホームページ公開！</dd>
+            <dd>公式ホームページ初公開！</dd>
           </dl>
         </div>
       </div>
+      <!--ABOUT-->
       <div id="spec" class="content-item">
         <h2>仕様</h2>
         <!--
@@ -79,6 +135,8 @@
           </div>
         </div>
       </div>
+      <!--ABOUT-->
+      <!--ENEMY-->
       <div id="enemy" class="content-item">
         <h2>敵キャラクター</h2>
         <div class="container">
@@ -91,6 +149,8 @@
           <!--ボタン操作により表示内容を更新する-->
         </div>
       </div>
+      <!--ENEMY-->
+      <!--GALLERY-->
       <div id="gallery" class="content-item">
         <h2>ギャラリー</h2>
         <div class="container">
@@ -100,6 +160,8 @@
           <img src="img/gallery04.PNG" alt="ギャラリー04" class="item" data-lity="data-lity">
         </div>
       </div>
+      <!--GALLERY-->
+      <!--PRODUCT-->
       <div id="product" class="content-item">
         <h2>プロダクト</h2>
         <div class="container">
@@ -154,12 +216,16 @@
           </div>
         </div>
       </div>
+      <!--PRODUCT-->
     </div>
   </div>
+  <!--フッター-->
   <footer>
     <p>&copy; 2021 BETA STRIKE / SugaWorks</p>
   </footer>
+  <!--フッター-->
 </div>
+<!--wrap-->
 <script type="text/javascript" src="js/default.js"></script>
 </body>
 </html>

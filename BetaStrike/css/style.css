@@ -40,6 +40,25 @@ img {
   max-width: 100%;
 }
 
+.menu-btn {
+  position: fixed;
+  z-index: 1000;
+  right: 20px;
+  top: 20px;
+  display: none;
+}
+
+.sp-nav {
+  z-index: 999;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  color: #fff;
+  background-color: rgba(200, 200, 200, 0.8);
+  padding: 150px 10px 20px 10px;
+}
+
 #wrap {
   width: 960px;
   margin: 0 auto;
@@ -91,9 +110,14 @@ dd {
 }
 
 #pc-movie {
-position: absolute;
-  right: 60px;
+  position: absolute;
+  right: 67px;
   bottom: 80px;
+}
+
+#pc-movie:hover {
+  opacity: 0.6;
+  filter: brightness(110%);
 }
 
 #sp-movie {
@@ -141,17 +165,18 @@ position: absolute;
   width: 70%;
 }
 
-.enemy-content{
+.enemy-content {
   margin-top: 20px;
 }
 
-.enemy-content .enemy-text{
+.enemy-content .enemy-text {
   margin: 20px 0 20px 0;
 }
 
-.enemy-content p{
+.enemy-content p {
   margin: 20px 0 20px 0;
 }
+
 #spec .img, .enemy-content .img {
   width: 30%;
   text-align: center;
@@ -160,7 +185,6 @@ position: absolute;
 #spec .img img, .enemy-content .img img {
   width: 200px;
 }
-
 
 #gallery .container {
   justify-content: space-between;
@@ -279,8 +303,12 @@ section {
     padding: 0;
   }
 
- #sp-top{
-  display: block;
+  .menu-btn {
+    display: block;
+  }
+
+  #sp-top {
+    display: block;
     width: 100%;
   }
 
@@ -288,23 +316,29 @@ section {
     display: none;
   }
 
-#pc-movie {
-  display: none;
-}
+  #pc-movie {
+    display: none;
+  }
 
-  #sp-movie{
+  #sp-movie {
     margin: 20px 0 10px 0;
     padding: 0 20px 0 20px;
     display: block;
     text-align: center;
   }
 
-  #sp-movie:hover{
+  #sp-movie:hover {
     opacity: 0.6;
     filter: brightness(110%);
   }
+
   #nav {
     display: none;
+  }
+
+  .sp {
+    width: 80%;
+    margin-bottom: 50px;
   }
 
   #content {
@@ -328,11 +362,12 @@ section {
   .enemy-content .enemy-text {
     text-align: center;
   }
-  #spec .item, .enemy-content .item  {
+
+  #spec .item, .enemy-content .item {
     width: 100%;
   }
 
-  #spec .img, .enemy-content .img  {
+  #spec .img, .enemy-content .img {
     width: 100%;
     padding: 20px 0 20px 0;
   }
