@@ -57,7 +57,7 @@ img {
   position: fixed;
   color: #fff;
   background-color: rgba(200, 200, 200, 0.8);
-  padding: 100px 10px 20px 10px;
+  padding: 100px 10px 10px 0;
 }
 
 #wrap {
@@ -66,7 +66,6 @@ img {
 }
 
 header {
-  width: 960px;
   padding: 0 20px 0 20px;
   position: relative;
 }
@@ -112,7 +111,7 @@ dd {
 
 #pc-movie {
   position: absolute;
-  right: 67px;
+  right: 40px;
   bottom: 80px;
 }
 
@@ -170,12 +169,8 @@ dd {
   margin-top: 20px;
 }
 
-.enemy-content .enemy-text {
-  margin: 20px 0 20px 0;
-}
-
-.enemy-content p {
-  margin: 20px 0 20px 0;
+.enemy-content .enemy-text ,.enemy-content p {
+  margin-top: 20px;
 }
 
 #spec .img, .enemy-content .img {
