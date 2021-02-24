@@ -58,6 +58,7 @@ img {
   color: #fff;
   background-color: rgba(200, 200, 200, 0.8);
   padding: 100px 10px 10px 0;
+  display: none;
 }
 
 #wrap {
@@ -300,7 +301,7 @@ section {
     padding: 0;
   }
 
-  .menu-btn {
+  .menu-btn ,.sp-nav{
     display: block;
   }
 

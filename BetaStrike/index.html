@@ -48,18 +48,18 @@
         let src = img.getAttribute('src');
         $(".sp-nav").hide();
         $(".menu-btn").click(function () {
-          $(".sp-nav").toggle(300);
-           src = img.getAttribute('src');
+          src = img.getAttribute('src');
           if (src === "img/menu-btn.png") {
             $("#hamburgerImg").attr('src', 'img/menu-btn-hover.png');
-            console.log(1);
+            $(".sp-nav").fadeIn(300);
           } else {
             $("#hamburgerImg").attr('src', 'img/menu-btn.png');
-            console.log(2);
+            $(".sp-nav").fadeOut(300);
           }
         });
         $(".menu-btn-item").click(function () {
-          $(".sp-nav").hide(300);
+          $("#hamburgerImg").attr('src', 'img/menu-btn.png');
+          $(".sp-nav").fadeOut(300);
         });
       });
     </script>
@@ -74,7 +74,7 @@
       </div>
       <!--PC用動画-->
       <div id="pc-movie">
-        <a href="https://youtu.be/0jcVAJ-fkwo" target="_blank" data-lity="data-lity">
+        <a href="https://youtu.be/N9XpKIzMftk" target="_blank" data-lity="data-lity">
           <img src="img/btn_movie.png" alt="デモ"></a>
       </div>
       <!--PC用動画-->
@@ -84,7 +84,7 @@
   <!--ヘッダー-->
   <!--スマホ用動画-->
   <div id="sp-movie">
-    <a href="https://youtu.be/0jcVAJ-fkwo" target="_blank" data-lity="data-lity">
+    <a href="https://youtu.be/N9XpKIzMftk" target="_blank" data-lity="data-lity">
       <img src="img/btn_movie.png" alt="デモ"></a>
   </div>
   <!--スマホ用動画-->
