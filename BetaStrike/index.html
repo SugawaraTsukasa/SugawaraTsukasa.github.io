@@ -2,11 +2,16 @@
 <html lang="ja">
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
   <meta charset="UTF-8">
-  <title>BETA STRIKE</title>
-  <meta name="description" content="Swiftを学習する過程で制作したシンプルな2Dシューティングゲーム">
+  <title>「BETA STRIKE」公式サイト | SugaWorks</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Swiftを学習する過程で制作したシンプルな2Dシューティングゲーム">
+  <!--OGP-->
+  <meta property="og:url" content="https://sugawaratsukasa.github.io/BetaStrike/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Swiftを学習する過程で制作したシンプルな2Dシューティングゲーム">
   <meta property="og:image" content="https://sugawaratsukasa.github.io/BetaStrike/img/ogp-icon.png">
-
+  <meta property="og:locale" content="ja_JP">
+  <!--OGP-->
   <!--favicon-->
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180×180.png">
@@ -28,6 +33,7 @@
   window.onload = function () {
     setTimeout('stopLoad()', 300);
   }
+
   function stopLoad() {
     const anime = document.getElementById('loading');
     anime.classList.add('loaded');
