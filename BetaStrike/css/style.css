@@ -296,11 +296,12 @@ header {
 #spec li {
   margin-bottom: 1.5rem;
 }
+
 .enemy-content {
   margin-top: 20px;
 }
 
-.enemy-content .enemy-text ,.enemy-content p {
+.enemy-content .enemy-text, .enemy-content p {
   margin-top: 20px;
 }
 
@@ -372,7 +373,7 @@ section {
     padding: 0;
   }
 
-  .menu-btn ,.sp-nav{
+  .menu-btn, .sp-nav {
     display: block;
   }
 
