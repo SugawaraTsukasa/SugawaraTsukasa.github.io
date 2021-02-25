@@ -15,6 +15,23 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.js'></script>
 </head>
 <body>
+<!--読み込み画面-->
+<div id="loading">
+  <div class="loader">
+  </div>
+</div>
+<!--読み込み画面-->
+<!--javascript-->
+  <script type="text/javascript">
+  window.onload = function () {
+    setTimeout('stopLoad()',300);
+  }
+  function stopLoad() {
+    const anime = document.getElementById('loading');
+    anime.classList.add('loaded');
+  }
+</script>
+<!--javascript-->
 <!--wrap-->
 <div id="wrap">
   <!--ヘッダー-->
@@ -44,9 +61,9 @@
     <!--javascript-->
     <script type="text/javascript">
       $(function () {
+        $(".sp-nav").hide();
         let img = document.getElementById("hamburgerImg");
         let src = img.getAttribute('src');
-        $(".sp-nav").hide();
         $(".menu-btn").click(function () {
           src = img.getAttribute('src');
           if (src === "img/menu-btn.png") {
